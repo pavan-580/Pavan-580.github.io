@@ -185,9 +185,7 @@ caption {
 
 th {
   text-align: inherit; }
-transparent {
-  opacity: 0.3; /* 50% transparent */
-}
+
 label {
   display: inline-block;
   margin-bottom: 0.5rem; }
