@@ -58,7 +58,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
- cursor: url('images/cursor-body.png') ,auto; }
+  cursor: url('images/cursor-body.png') ,auto; }
 
 div{
   cursor:url('images/cursor-divv.png') ,auto;
