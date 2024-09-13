@@ -58,7 +58,15 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  overflow-x: hidden; }
+ cursor: url('../images/cursor-body.png') ,auto; }
+
+div{
+  cursor:url('../images/cursor-divv.png') ,auto;
+  
+}
+div ul li a{
+  cursor: url('../images/hand-cursor.png') ,auto ;
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
