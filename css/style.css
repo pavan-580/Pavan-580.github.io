@@ -58,14 +58,14 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  cursor: url('images/cursor-body.png') ,auto !important; }
+  cursor: url('images/cursor-body.png')  !important; }
 
 div{
-  cursor:url('images/cursor-divv.png') ,auto !important;
+  cursor:url('images/cursor-divv.png') !important;
   
 }
 div ul li a{
-  cursor: url('images/hand-cursor.png') ,auto !important ;
+  cursor: url('images/hand-cursor.png')  !important ;
 }
 
 [tabindex="-1"]:focus {
@@ -90,7 +90,7 @@ abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  cursor: help;
+  cursor: url('images/hand-cursor.png') ,auto !important
   border-bottom: 0;
   text-decoration-skip-ink: none; }
 
@@ -236,7 +236,7 @@ button:not(:disabled),
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
-  cursor: url('images/hand-cursor.png') ,auto !important }
+  cursor: url('images/hand-cursor.png') !important }
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -301,10 +301,10 @@ output {
 
 summary {
   display: list-item;
-  cursor: pointer; }
+  cursor: url('images/hand-cursor.png')  !important }
 
 template {
-  display: none; }
+  display: none; } 
 
 [hidden] {
   display: none !important; }
