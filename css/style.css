@@ -58,14 +58,14 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  cursor: url('images/cursor-body.png') ,auto; }
+  cursor: url('images/cursor-body.png') ,auto !important; }
 
 div{
-  cursor:url('images/cursor-divv.png') ,auto;
+  cursor:url('images/cursor-divv.png') ,auto !important;
   
 }
 div ul li a{
-  cursor: url('images/hand-cursor.png') ,auto ;
+  cursor: url('images/hand-cursor.png') ,auto !important ;
 }
 
 [tabindex="-1"]:focus {
