@@ -58,16 +58,19 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  overflow-x : hidden;
-  cursor: url('images/cursor-body.png')  !important; }
+  overflow-x: hidden;
+cursor: url('../images/cursor-body.png') ,auto; }
 
 div{
-  cursor:url('images/cursor-divv.png') !important;
+  cursor:url('../images/cursor-divv.png') ,auto;
   
 }
 div ul li a{
-  cursor: url('images/hand-cursor.png')  !important ;
+  cursor: url('../images/hand-cursor.png') ,auto ;
 }
+  
+
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -91,7 +94,7 @@ abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  cursor: url('images/hand-cursor.png') ,auto !important
+  cursor: help;
   border-bottom: 0;
   text-decoration-skip-ink: none; }
 
@@ -237,7 +240,7 @@ button:not(:disabled),
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
-  cursor: url('images/hand-cursor.png') !important }
+  cursor: url('../images/hand-cursor.png') !important ; }
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -302,10 +305,10 @@ output {
 
 summary {
   display: list-item;
-  cursor: url('images/hand-cursor.png')  !important }
+  cursor: pointer; }
 
 template {
-  display: none; } 
+  display: none; }
 
 [hidden] {
   display: none !important; }
@@ -1484,7 +1487,9 @@ pre {
 .table-danger > th,
 .table-danger > td {
   background-color: #f5c6cb; }
-
+.color-danger{
+  color: #0800ff;
+}
 .table-danger th,
 .table-danger td,
 .table-danger thead th,
@@ -1513,6 +1518,8 @@ pre {
   .table-hover .table-light:hover > td,
   .table-hover .table-light:hover > th {
     background-color: #ececf6; }
+
+
 
 .table-dark,
 .table-dark > th,
