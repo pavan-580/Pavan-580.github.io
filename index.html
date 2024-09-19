@@ -59,7 +59,11 @@ height: .7rem;
 height: .7rem;
 background-color: #ffbd39;
 }
-
+  @media only screen and (max-width: 768px) {
+    .one-thirdw {
+      background-position: center 75px; /* Moves the image 75px up */
+    }
+  }
 
 /* Animation styles */
 #typing-animation {
@@ -154,7 +158,7 @@ body{
 	    <div class="overlay"></div>
 	        <div class="container">
 	        	<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img ml-2  !important " style="background-image:url(images/ABOUTME.jpg);background-size: 90% !important; opacity: 0.7; ">
+	          	<div class="one-third js-fullheight order-md-last img ml-2 one-thirdw !important " style="background-image:url(images/ABOUTME.jpg);background-size: 90% !important; opacity: 0.7; ">
 	          	<div class="overlay"></div>                                                                                                
 	          	</div>
 		        <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
