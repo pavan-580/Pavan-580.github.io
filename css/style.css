@@ -68,6 +68,21 @@ div{
 div ul li a{
   cursor: url('../images/hand-cursor.png') ,auto ;
 }
+
+button{
+    cursor:url('../images/cursor-divv.png') ,auto;
+  
+}
+
+button a{
+    cursor:url('../images/cursor-divv.png') ,auto;
+  
+}
+  
+a{
+    cursor:url('../images/cursor-divv.png') ,auto;
+  
+}
   
 
 
