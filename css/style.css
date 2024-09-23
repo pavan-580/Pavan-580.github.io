@@ -61,29 +61,7 @@ body {
   overflow-x: hidden;
 cursor: url('../images/cursor-divv.png') ,auto; }
 
-div{
-  cursor:url('../images/cursor-divv.png') ,auto;
-  
-}
-div ul li a{
-  cursor: url('../images/hand-cursor.png') ,auto ;
-}
 
-button{
-    cursor:url('../images/cursor-divv.png'!important) ,auto;
-  
-}
-
-button a{
-    cursor:url('../images/cursor-divv.png'!important) ,auto;
-  
-}
-  
-a{
-    cursor:url('../images/cursor-divv.png'!important) ,auto;
-  
-}
-  
 
 
 
