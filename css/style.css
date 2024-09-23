@@ -70,17 +70,17 @@ div ul li a{
 }
 
 button{
-    cursor:url('../images/cursor-divv.png') ,auto;
+    cursor:url('../images/cursor-divv.png'!important) ,auto;
   
 }
 
 button a{
-    cursor:url('../images/cursor-divv.png') ,auto;
+    cursor:url('../images/cursor-divv.png'!important) ,auto;
   
 }
   
 a{
-    cursor:url('../images/cursor-divv.png') ,auto;
+    cursor:url('../images/cursor-divv.png'!important) ,auto;
   
 }
   
