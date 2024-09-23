@@ -255,7 +255,7 @@ button:not(:disabled),
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
-  cursor: url('../images/hand-cursor.png') !important ; }
+   }
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
