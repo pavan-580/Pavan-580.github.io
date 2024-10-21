@@ -58,7 +58,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  overflow-y:hidden;
+  overflow-x:hidden;
 cursor: url('../images/cursor-divv.png') ,auto; }
 
 
