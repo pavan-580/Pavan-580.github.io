@@ -8782,7 +8782,7 @@ h1, h2, h3, h4, h5,
       background: transparent !important;
       color: #fff !important; }
     .btn.btn-white.btn-outline-white:hover {
-      border: 0.1px solid  grey !important;
+      border: 0px solid  grey !important;
       background: #ffbd39;
       color: orange !important; }
 .number:hover {
