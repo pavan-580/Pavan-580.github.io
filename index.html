@@ -144,7 +144,57 @@ a{
     cursor:url('../images/cursor-divv.png' !important) ,auto;
   
 }
-</style>
+
+.whatsapp-icon {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        background-color: #25D366;
+        border-radius: 25%;
+        padding: 01px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        visibility: hidden; /* Initially hidden */
+        opacity: 0;         /* Initially transparent */
+        transition: visibility 0.3s, opacity 0.3s ease;
+    }
+    .whatsapp-icon img {
+        width: 50px; /* Adjust size as needed */
+        transition: transform 0.3s ease;
+    }
+    .whatsapp-icon:hover {
+        transform: scale(1.0); /* Zoom in on hover */
+        box-shadow: 0px 8px 20px rgba(0, 255, 0, 0.9); /* Green shadow on hover */
+    }
+    .whatsapp-icon:hover img {
+        transform: scale(.9); /* Slight zoom in on the icon itself */
+    }
+    .visible {
+        visibility: visible;
+        opacity: 1; /* Fully opaque when visible */
+    }
+
+
+    
+
+
+    </style>
+
+    <script>
+    // When the window scrolls
+    window.onscroll = function() {
+        var whatsappIcon = document.querySelector('.whatsapp-icon');
+        // Check if the scroll position is more than 568 pixels
+        if (document.body.scrollTop > 568 || document.documentElement.scrollTop > 568) {
+            // Make the WhatsApp icon visible
+            whatsappIcon.classList.add('visible');
+        } else {
+            // Hide the WhatsApp icon if above the threshold
+            whatsappIcon.classList.remove('visible');
+        }
+    };
+</script>
 
 
 </head>
@@ -582,7 +632,9 @@ a{
 		</div>
 	</section>
 
-
+ <a  href="https://wa.me/+918074399963" target="_blank" class="whatsapp-icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
