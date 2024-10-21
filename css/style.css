@@ -3503,7 +3503,9 @@ input[type="button"].btn-block {
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
     position: static;
-    float: none; }
+    float: none; 
+    right: 20px ;
+  }
 
 .navbar-text {
   display: inline-block;
