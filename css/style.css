@@ -8781,10 +8781,10 @@ h1, h2, h3, h4, h5,
       border: 1px solid rgba(255, 255, 255, 0.5) !important;
       background: transparent !important;
       color: #fff !important; }
-      .btn.btn-white.btn-outline-white:hover {
-        border: 1px solid  gold !important;
-        background: #ffbd39;
-        color: orange !important; }
+    .btn.btn-white.btn-outline-white:hover {
+      border: 0.1px solid  grey !important;
+      background: #ffbd39;
+      color: orange !important; }
 .number:hover {
   color: red !important;
 }
