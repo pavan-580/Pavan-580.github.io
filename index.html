@@ -201,37 +201,6 @@ a{
     opacity: 1; /* Make visible when class is added */
 }
 
- .vibrate {
-            display: inline-block; /* Ensure the span can be animated */
-            transition: color 0.3s ease; /* Smooth color transition */
-            color: black !important; /* Default color */
-            font-size: 15px;
-            font-weight: 300;
-        }
-
-        .letter {
-            display: inline-block; /* Allows animation on individual letters */
-            opacity: 0; /* Start hidden */
-            transform: translateX(-10px); /* Start position */
-            animation: show 0.5s forwards; /* Animation for showing letters */
-        }
-
-        @keyframes show {
-            to {
-                opacity: 1; /* Fade in */
-                transform: translateX(0); /* Move to original position */
-            }
-        }
-
-        .vibrate:hover {
-            color: red; /* Change color on hover */
-        }
-@keyframes show {
-    to {
-        opacity: 1; /* Fade in */
-        transform: translateX(0); /* Move to original position */
-    }
-}
 
 /* WhatsApp Icon Visibility */
 .whatsapp-icon {
@@ -241,6 +210,34 @@ a{
 
 .whatsapp-icon.visible {
     opacity: 1; /* Make visible when class is added */
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    60% { transform: translate(1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0); }
+}
+
+.vibrate {
+    display: inline-block; /* Ensure the span can be animated */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition */
+}
+
+.vibrate:hover {
+    color: red; /* Change color to red on hover */
+    animation: vibrate 0.2s linear infinite; /* Start vibrating on hover */
+}
+
+
+
+@keyframes show {
+    to {
+        opacity: 1; /* Fade in */
+        transform: translateX(0); /* Move to original position */
+    }
 }
 
     </style>
