@@ -23,18 +23,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@keyframes vibrate {
-    0% { transform: translate(0); }
-    20% { transform: translate(-10px, 10px); }
-    40% { transform: translate(-10px, -20px); }
-    60% { transform: translate(10px, 20px); }
-    80% { transform: translate(10px, -10px); }
-    100% { transform: translate(10); }
-}
-
-.vibrate:hover {
-    animation: vibrate 2.2s linear infinite; /* Adjust duration and timing function as needed */
-}
 
 
 .icon-asterisk:before {
