@@ -201,16 +201,18 @@ a{
 .vibrate {
     display: inline-block; /* Ensure the span can be animated */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition and stop animation */
-    animation: vibrate 0.2s linear infinite; /* Add vibration by default */
+    animation: vibrate 0.2s linear infinite; /* Vibrate by default */
 }
 
 .vibrate.stopped {
-    animation: none; /* Stop vibration permanently */
-    color: orange; /* Stable color after hover */
+    animation: none; /* Permanently stop vibration */
+}
+
+.vibrate.stopped:hover {
+    color: red; /* Change color on hover */
 }
 
 .vibrate:hover {
-    animation: none; /* Stop vibration on hover */
     color: red; /* Change color to red on hover */
 }
 
@@ -228,24 +230,16 @@ a{
     }
 }
 
-/* WhatsApp Icon Visibility */
-.whatsapp-icon {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility */
-}
-
-.whatsapp-icon.visible {
-    opacity: 1; /* Make visible when class is added */
-}
 
     </style>
 
     <script>
-	    document.querySelectorAll('.vibrate').forEach(function(el) {
+	  document.querySelectorAll('.vibrate').forEach(function(el) {
     el.addEventListener('mouseover', function() {
-        el.classList.add('stopped'); // Stop vibration permanently after hover
+        el.classList.add('stopped'); // Add 'stopped' class to stop vibration
     });
 });
+
     // When the window scrolls
     window.onscroll = function() {
         var whatsappIcon = document.querySelector('.whatsapp-icon');
