@@ -189,6 +189,20 @@ a{
     color: orange !important ;
 }
 
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(-1px, -2px); }
+    60% { transform: translate(1px, 2px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0); }
+}
+
+.vibrate:hover {
+    animation: vibrate 0.2s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+
 
 
     </style>
@@ -291,8 +305,16 @@ a{
 						<br>
 						<br>
 			            <h2>A Software Developer</h2>
-				<h2><span onmouseover="this.style.color='red'" onmouseout="this.style.color='transparent'" style="color:transparent !important ;">And an Ethical Hacker</span></h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+				<h2>
+					    <span 
+					        class="vibrate" 
+					        onmouseover="this.style.color='red'" 
+					        onmouseout="this.style.color='transparent'" 
+					        style="color:transparent !important ;">
+					        And an Ethical Hacker
+					    </span>
+					</h2>
+		<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 						<a href="https://github.com/pavan-580" class="btn btn-white btn-outline-white py-3 px-4 mt-3" style=" cursor:url('../images/cursor-divv.png' !important) ,auto;" target="_blank">My works</a></p>
 		            </div>
