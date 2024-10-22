@@ -189,6 +189,18 @@ a{
     color: orange !important ;
 }
 
+
+
+/* WhatsApp Icon Visibility */
+.whatsapp-icon {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility */
+}
+
+.whatsapp-icon.visible {
+    opacity: 1; /* Make visible when class is added */
+}
+
 @keyframes vibrate {
     0% { transform: translate(0); }
     20% { transform: translate(-1px, 1px); }
