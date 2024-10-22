@@ -9080,7 +9080,9 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden; 
+  cursor:none;
+}
 
 .bg-primary {
   background: #ffbd39 !important; }
