@@ -284,40 +284,8 @@ a{
 		        <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		      	<div class="text">
 		      	<span class="subheading">Hello!</span>
-<!-- 		            <h1 class="mb-4 mt-3">I'm<span> Pavan Sai</span></h1> -->
-				<ul>
-        <li class="d-flex">
-            <span class="vibrate white" id="animatedText1"></span>
-            <span class="vibrate orange" id="animatedText2"></span>.
-        </li>
-    </ul>
-
-    <script>
-        const text1 = "I'm"; // The first text to animate
-        const text2 = " Pavan Sai"; // The second text to animate (note the leading space)
-        
-        const container1 = document.getElementById('animatedText1');
-        const container2 = document.getElementById('animatedText2');
-
-        // Split the first text into letters and wrap them in span elements
-        text1.split('').forEach((letter, index) => {
-            const span = document.createElement('span');
-            span.classList.add('letter');
-            span.textContent = letter; // Add letter
-            span.style.animationDelay = `${index * 0.1}s`; // Delay each letter's animation
-            container1.appendChild(span);
-        });
-
-        // Split the second text into letters and wrap them in span elements
-        text2.split('').forEach((letter, index) => {
-            const span = document.createElement('span');
-            span.classList.add('letter');
-            span.textContent = letter; // Add letter
-            span.style.animationDelay = `${(index + text1.length) * 0.1}s`; // Delay each letter's animation
-            container2.appendChild(span);
-        });
-    </script>
-
+		            <h1 class="mb-4 mt-3">I'm<span> Pavan Sai</span></h1>
+				
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
 
