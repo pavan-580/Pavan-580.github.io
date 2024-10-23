@@ -256,7 +256,11 @@ a{
         transform: translateX(0); /* Move to original position */
     }
 }
-
+@media only screen and (max-width: 768px) {
+    .owl-carousel.home-slider .slider-item .slider-text .one-third video {
+        display: none; /* Hide the video on mobile */
+    }
+}
     </style>
 
     <script>
