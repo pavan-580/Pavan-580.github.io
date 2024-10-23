@@ -48,8 +48,31 @@ margin-bottom: 2rem;
 .about-mf .about-img img {
 margin-left: 10px;
 }
+.owl-carousel.home-slider .slider-item .slider-text .one-third {
+          width: 200%;
+          position: relative;
+          margin-top: 150px;
+          z-index: -1; }
+@media (max-width: 768px) {
+    .one-third {
+        background-position: center 9% !important; /* Move the image up */
+        background-size: 100% !important; /* Adjust size for mobile */
+        padding: 20px !important; /* Reduce padding if needed */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .owl-carousel.home-slider .slider-item .slider-text .one-third {
+        width: 100%; /* Take full width on mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-
+    .owl-carousel.home-slider .slider-item .slider-text .one-third video {
+        width: 100%; /* Ensure video takes full width on mobile */
+        height: auto;
+    }
+}
 .skill-mf .progress {
   /* background-color: #cde1f8; */
 margin: .5rem 0 1.2rem 0;
@@ -234,53 +257,10 @@ a{
     }
 }
 @media only screen and (max-width: 768px) {
-	#background-video {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-    .owl-carousel.home-slider .slider-item .slider-text .one-third {
-        width: 100%; /* Take full width on mobile */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .owl-carousel.home-slider .slider-item .slider-text .one-third video {
-        width: 100%; /* Ensure video takes full width on mobile */
-        height: auto;
+       display:none;    
     }
 }
-
-/* Styling the image gallery container */
-.image-gallery {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-	margin: 2px;
-
-}
-
-/* Styling each icon */
-.gallery-icon {
-    width: 100px; /* Small size */
-    height: 80px;
-    
-    border-radius: 25px; /* Rounded corners */
-    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
-}
-
-/* Hover effect */
-.gallery-icon:hover {
-    transform: scale(8.5); /* Enlarge the image */
-	border-radius: 2px; /* Rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
-	width: 175x; /* Initial width */
-    height: 65px;
-}
-
     </style>
 
     <script>
@@ -343,19 +323,17 @@ a{
 		<div class="slider-item ">
 	    <div class="overlay"></div>
 	        <div class="container">
+			
 	        	<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-					<div class="one-third js-fullheight order-md-last img ml-2  !important" style="background-size: 100% !important;">
+				<div class="one-third js-fullheight order-md-last img ml-2  !important" style="background-size: 100% !important;">
 						<!-- Your content here -->
 						<video id="background-video" autoplay muted loop style="width: 40%; height: auto; object-fit: cover; position: absolute; right: 0; top: 0;">
 							<source src="images/163491-827845629.mp4" type="video/mp4">
-							
+							Your browser does not support the video tag.
 						</video>
 					</div>
-					
-	          	<div class="one-third js-fullheight order-md-last img">
-					
-					
-					<div class="overlay"></div>                                                                                                
+					<div class="one-third js-fullheight order-md-last img">
+	          	<div class="overlay"></div>                                                                                                
 	          	</div>
 		        <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		      	<div class="text">
@@ -401,7 +379,9 @@ a{
 						<br>
 						<br>
 			            <h2>A Software Developer <span style="opacity:0.5">,</span></h2>
-				<h2 onmouseover="this.style.color='white'" onmouseout="this.style.color='transparent'" style="color:transparent !important ;">And an 
+				<h2 onmouseover="this.style.color='white'" 
+
+onmouseout="this.style.color='transparent'" style="color:transparent !important ;">And an 
 					    <span 
 					        class="vibrate"
 					        onmouseover="this.style.color='red'" 
@@ -577,7 +557,7 @@ a{
 						<span class="date">2020-2023</span>
 						<h2>Team Member</h2>
 						<span class="position">Dr.Reddy's lab</span>
-						<p class="mt-4">Dr. Reddy's Laboratories is a globally recognized pharmaceutical company, dedicated to the development, 
+						<p class="mt-4"\>Dr. Reddy's Laboratories is a globally recognized pharmaceutical company, dedicated to the development, 
 							production, and distribution of a diverse range of medications that address various therapeutic areas. As an SAP & Material Dispatch 
 							Specialist, I play a crucial role in the company's supply chain operations by managing the end-to-end material dispatch process through SAP systems. 
 							This includes overseeing real-time updates of inventory data, coordinating with cross-functional teams to ensure accurate stock levels, 
@@ -595,8 +575,7 @@ a{
 
 		<br>
 		<br>
-		
-		
+
 		<div class="row">
 			<h1 class="big-4">Education</h1>
 			<div class="underline"></div>
@@ -699,7 +678,6 @@ a{
   
 				  <h3 class="heading"><a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" target="_blank">Customer Segmentation using clustering model</a></h3>
 				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				  <br>
 				</div>
 			  </div>
 			</div>
@@ -717,30 +695,10 @@ a{
 			  </div>
 			</div>
 		-->
-		
-		<div class="col-md-7 heading-section text-center ftco-animate">
-			
-			<h1 class="big big-2 vibrate">Achievements</h1>
-			<h2 class="mb-4">Achievements</h2>
-			<p>Milestones Achieved Along the Journey.</p>
-	
-			<div class="image-gallery">
-				<img src="images/Responsive_website.png" alt="Icon 4" class="gallery-icon mr-5">
-				<img src="images/programming_with_python.png" alt="Icon 1" class="gallery-icon mr-5">
-				<img src="images/Data_bases.png" alt="Icon 3" class="gallery-icon mr-5">
-				<img src="images/Developer_foundation.png" alt="Icon 2" class="gallery-icon mr-5">
-				<img src="images/accenture.png" alt="Icon 5" class="gallery-icon">
-			</div>
-	
-		</br>
-	
-		  </div>
 		 </div>
-		</br>		 
 	  </div>
-	  </br>
     </section>
-	
+
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
 		<div class="row d-md-flex align-items-center">
