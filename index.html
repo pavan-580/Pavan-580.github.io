@@ -48,7 +48,11 @@ margin-bottom: 2rem;
 .about-mf .about-img img {
 margin-left: 10px;
 }
-
+.owl-carousel.home-slider .slider-item .slider-text .one-third {
+          width: 200%;
+          position: relative;
+          margin-top: 150px;
+          z-index: -1; }
 @media (max-width: 768px) {
     .one-third {
         background-position: center 9% !important; /* Move the image up */
@@ -302,8 +306,16 @@ a{
 		<div class="slider-item ">
 	    <div class="overlay"></div>
 	        <div class="container">
+			
 	        	<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img ml-2 one-thirdw !important " style="background-image:url(images/hhh.png);background-size: 90% !important; opacity: 0.5; ">
+				<div class="one-third js-fullheight order-md-last img ml-2  !important" style="background-size: 100% !important;">
+						<!-- Your content here -->
+						<video id="background-video" autoplay muted loop style="width: 40%; height: auto; object-fit: cover; position: absolute; right: 0; top: 0;">
+							<source src="images/163491-827845629.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="one-third js-fullheight order-md-last img">
 	          	<div class="overlay"></div>                                                                                                
 	          	</div>
 		        <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
