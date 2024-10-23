@@ -261,6 +261,33 @@ a{
        display:none;    
     }
 }
+/* Styling the image gallery container */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+	margin: 2px;
+
+}
+
+/* Styling each icon */
+.gallery-icon {
+    width: 100px; /* Small size */
+    height: 80px;
+    
+    border-radius: 25px; /* Rounded corners */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.gallery-icon:hover {
+    transform: scale(8.5); /* Enlarge the image */
+	border-radius: 2px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+	width: 175x; /* Initial width */
+    height: 65px;
+}
     </style>
 
     <script>
@@ -695,8 +722,27 @@ onmouseout="this.style.color='transparent'" style="color:transparent !important 
 			  </div>
 			</div>
 		-->
+		 <div class="col-md-7 heading-section text-center ftco-animate">
+			
+			<h1 class="big big-2 vibrate">Achievements</h1>
+			<h2 class="mb-4">Achievements</h2>
+			<p>Milestones Achieved Along the Journey.</p>
+	
+			<div class="image-gallery">
+				<img src="images/Responsive_website.png" alt="Icon 4" class="gallery-icon mr-5">
+				<img src="images/programming_with_python.png" alt="Icon 1" class="gallery-icon mr-5">
+				<img src="images/Data_bases.png" alt="Icon 3" class="gallery-icon mr-5">
+				<img src="images/Developer_foundation.png" alt="Icon 2" class="gallery-icon mr-5">
+				<img src="images/accenture.png" alt="Icon 5" class="gallery-icon">
+			</div>
+	
+		</br>
+	
+		  </div>
 		 </div>
+		</br>		 
 	  </div>
+	  </br>
     </section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
