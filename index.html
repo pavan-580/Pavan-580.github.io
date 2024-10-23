@@ -36,6 +36,15 @@
 /*======================================
 //--//-->   ABOUT
 ======================================*/
+.grayscale-img {
+    filter: grayscale(100%) !important; /* Apply grayscale */
+    transition: filter .8s ease-in-out; /* Smooth transition */
+}
+
+/* Optional: Restore color on hover */
+.grayscale-img:hover {
+    filter: grayscale(30%) !important; /* Restore color on hover */
+}
 
 .about-mf .box-shadow-full {
 padding-top: 4rem;
@@ -471,7 +480,8 @@ onmouseout="this.style.color='transparent'" style="color:transparent !important 
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									<div class="about-img">
-										<img src="../images/Pavan.jpg"  class="img-fluid rounded b-shadow-a mb-5" alt="">
+										<img src="../images/Pavan.jpg"  class="img-fluid rounded b-shadow-a mb-5 grayscale-img" alt="">
+										
 									</div>
 									</div>
 									<!-- Details next to profile image -->
