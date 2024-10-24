@@ -356,18 +356,40 @@ a{
     left:40px;
     
 }@media only screen and (max-width: 768px) {
-
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the icons */
+}
 .gallery-icon:hover {
-    transform: scale(5); /* Enlarge the image */
+/*     transform: scale(5); /* Enlarge the image */ 
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
-    width: 90px ; /* Initial width */
-    height: 55px !important;
+/*     width: 90px ; 
+    height: 55px !important; */
     flex-wrap: wrap;
-
-	
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    transition: all 0.3s ease;
+    z-index: 999;
 	
     }
+/* .gallery-icon:hover::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 998;  */
+}
 
     
     /* Optional: Align items in center */
@@ -823,7 +845,7 @@ a{
 			<h2 class="mb-4 hover-effect">Achievements</h2>
 			<p class="hover-effect">Milestones Achieved Along the Journey...!</p>
 		 </br>
-			<div class="image-gallery">
+			<div class="gallery-container">
 				<img src="images/Responsive_website1.jpg" alt="Icon 4" class="gallery-icon ">
 				<img src="images/programming_with_python1.jpg" alt="Icon 1" class="gallery-icon ">
 				<img src="images/Data_bases1.jpg" alt="Icon 3" class="gallery-icon">
