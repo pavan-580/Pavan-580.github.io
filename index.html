@@ -41,16 +41,21 @@
 		transform: translateY(-4px); /* Moves the word up by 5px */
 	  }
 	.shining-text1 {
-		font-size: 20px;
-		
-		background: linear-gradient(100deg, #ff6c03, #ff9100, #494949);
-		background-size: 300% auto;
-		
+				font-size: 20px;
+		color: #ddd;
+		background: linear-gradient(120deg, #f6f6f6, #ffffff,#d19a00);
+		background-size: 200% auto;
 		background-clip: text;
-		text-fill-color: transparent;
-		animation: shine 9s linear infinite;
 		-webkit-background-clip: text;
+		text-fill-color: transparent;
 		-webkit-text-fill-color: transparent;
+		animation: metallic-shine 3s linear infinite;
+	}
+	
+	@keyframes metallic-shine {
+		0% { background-position: 200% 50%; }
+		100% { background-position: 0% 50%; }
+	}
 	  }
   
 	  @keyframes shine {
