@@ -341,7 +341,6 @@ a{
 .gallery-icon {
     width: 100px; /* Small size */
     height: 80px;
-    margin:10px;
     margin-bottom: 10px; 
     border-radius: 25px; /* Rounded corners */
     transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
@@ -357,30 +356,55 @@ a{
     left:40px;
     
 }@media only screen and (max-width: 768px) {
+
+/* Container for the small icons */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the icons */
 }
+
+/* Small icon styling */
+.gallery-icon {
+    width: 90px;
+    height: 55px;
+    object-fit: cover; /* Ensures the image fits within the container */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px; /* Add space between icons */
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay for the hovered image */
+.gallery-icon:hover::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 998; /* Behind the enlarged image */
+}
+
+/* Hover effect: Enlarge the image and center it */
 .gallery-icon:hover {
-/*     transform: scale(5); /* Enlarge the image */ 
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
-/*     width: 90px ; 
-    height: 55px !important; */
-    flex-wrap: wrap;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 999; /* Make sure the image appears on top */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
     transition: all 0.3s ease;
-    z-index: 999;
-	
-    }
+}
+
+
     
     /* Optional: Align items in center */
     
