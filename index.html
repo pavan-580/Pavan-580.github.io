@@ -355,21 +355,21 @@ a{
     height: 65px;
     left:40px;
     
-}
-@media only screen and (max-width: 768px) {
+}@media only screen and (max-width: 768px) {
     .gallery-icon {
         width: 30%; 
 	flex-wrap: wrap;/* Set each image to take up about 30% of the container width */
-	width: 75px; /* Small size */
-        height: 65px;
-	
+	width: 75px !important; /* Small size */
+        height: 55px !important;
+		border-radius: 5px; /* Rounded corners */
+	}
 .gallery-icon:hover {
     transform: scale(1.5); /* Enlarge the image */
     border-radius: 2px; /* Rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
-    width: 75x; /* Initial width */
-    height: 65px;
-    left:40px;
+    width: 190px !important; /* Initial width */
+    height: 135px !important;
+    flex-wrap: wrap;
 	
     }
 
@@ -377,7 +377,6 @@ a{
     /* Optional: Align items in center */
     
     }
-}
     </style>
 
     <script>
