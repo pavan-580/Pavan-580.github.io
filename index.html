@@ -33,13 +33,33 @@
 
 
 <style>
+	.video-background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: -1; /* Ensure the video stays behind other content */
+	}
+	
+	.video-background video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		transform: translate(-50%, -50%);
+		object-fit: cover; /* Ensures the video covers the whole screen */
+	}
+	
 
 	.button-linkedin {
 		font-size: 12px;
 		color: #ffffff; /* LinkedIn blue color */
 		background-color: transparent;
 		border: 5px solid transparent;
-		border-image: linear-gradient(700deg, #b58200 25%, transparent 25%, transparent 75%, #b57000 75%) 15;
+		border-image: linear-gradient(690deg, #b58200 25%, transparent 25%, transparent 75%, #b57000 75%) 15;
 		border-radius: 15px;
 		text-align: center;
 		text-decoration: none;
@@ -207,7 +227,7 @@ transform: scale(1.1);
 div{
   cursor:url('../images/cursor-divv.png') ,auto;
 .navbar-brand{
-	cursor:none !important ,auto;
+	cursor:none auto;
 }
 }
 div ul li a{
@@ -357,7 +377,7 @@ a{
     width: 155x; /* Initial width */
     height: 65px;
     left:40px;
-    
+    cursor:none !important;
 }@media only screen and (max-width: 768px) {
 #myw:hover{
 		color:orange !important;  
@@ -472,6 +492,12 @@ a{
 		</div>
 	</div>
 	</nav>
+	<div class="video-background">
+		<video autoplay muted loop playsinline>
+			<source src="images/.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
 
 		<section id="home-section" class="hero">
 		<div class="home-slider  owl-carousel">
@@ -483,7 +509,7 @@ a{
 				<div class="one-third js-fullheight order-md-last img ml-2  !important" style="background-size: 100% !important;">
 						<!-- Your content here -->
 						<video id="background-video" autoplay muted loop style="width: 40%; height: auto; object-fit: cover; position: absolute; right: 0; top: 0;">
-							<source src="images/163491-827845629.mp4" type="video/mp4">
+							<source src="images/used.mp4" type="video/mp4">
 <!-- 							Your browser does not support the video tag -->
 						</video>
 					</div>
@@ -546,7 +572,7 @@ a{
 					</h2> 
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-						<a href="https://github.com/pavan-580" class="btn button-linkedin py-3 px-4 mt-3" onmouseover="this.style.color='orange'" id="myw" onmouseout="this.style.color='white'" style="color:rgb(255, 255, 255) !important " style=" cursor:url('../images/cursor-divv.png') ,auto;" target="_blank">My works</a></p>
+						<a href="https://github.com/pavan-580" class="btn button-linkedin  mt-3" onmouseover="this.style.color='orange'" id="myw" onmouseout="this.style.color='white'" style="color:rgb(255, 255, 255) !important; min-width:180px"  target="_blank">My works</a></p>
 		            </div>
 		        </div>
 	        	</div>
@@ -778,7 +804,7 @@ a{
    
 
     <section class="ftco-section" id="project-section">
-      <div class="container">
+      <div class="container" >
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2 vibrate ">Projects</h1>
@@ -786,37 +812,37 @@ a{
             <p class="hover-effect">Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
           </div>
         </div>
-        <div class="row d-flex">
+        <div class="row d-flex" style="cursor: none !important;">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/pavan-580/-Digital-Music-Store/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" target="_blank">
+              <a href="https://github.com/pavan-580/-Digital-Music-Store/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect " style="background-image: url('images/proj_1.jpg');cursor: none !important;" target="_blank">
               </a>     
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/pavan-580/-Digital-Music-Store/blob/main/Music_Store_Query.sql" target="_blank">Digital Music Store Data Analysis using SQL</a></h3>
-                <p class="hover-effect">Analyzed music store data using advanced SQL queries to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="https://github.com/pavan-580/-Digital-Music-Store/blob/main/Music_Store_Query.sql" target="_blank" style="cursor: none !important;">Digital Music Store Data Analysis using SQL</a></h3>
+                <p class="hover-effect" style="cursor: none !important;">Analyzed music store data using advanced SQL queries to identify gaps and increase the business growth.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/pavan-580/Diwali-Sale/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');" target="_blank">
+              <a href="https://github.com/pavan-580/Diwali-Sale/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');cursor: none !important;" target="_blank">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/pavan-580/Diwali-Sale/blob/main/Diwali_Sales_Analysis.ipynb" target="_blank">Data Analysis using Python Project for Beginners</a></h3>
-                <p class="hover-effect">Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+                <h3 class="heading"><a href="https://github.com/pavan-580/Diwali-Sale/blob/main/Diwali_Sales_Analysis.ipynb" target="_blank" style="cursor: none !important;">Data Analysis using Python Project for Beginners</a></h3>
+                <p class="hover-effect" style="cursor: none !important;">Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/pavan-580/power-bi-analysis/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');" target="_blank">
+              <a href="https://github.com/pavan-580/power-bi-analysis/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');cursor: none !important;" target="_blank">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/pavan-580/power-bi-analysis/blob/main/Madhav%20Store%20dashboard.jpg" target="_blank">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p class="hover-effect">Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+                <h3 class="heading"><a href="https://github.com/pavan-580/power-bi-analysis/blob/main/Madhav%20Store%20dashboard.jpg" target="_blank" style="cursor: none !important;">Power BI Sales dashboard Project for Beginners</a></h3>
+                <p class="hover-effect" style="cursor: none !important;">Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
               </div>
             </div>
           </div>
@@ -826,46 +852,34 @@ a{
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/pavan-580/sales-forcasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');" target="_blank">
+				<a href="https://github.com/pavan-580/sales-forcasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');cursor: none !important;" target="_blank">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/pavan-580/sales-forcasting/tree/main" target="_blank">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p class="hover-effect">Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				  <h3 class="heading"><a href="https://github.com/pavan-580/sales-forcasting/tree/main" target="_blank" style="cursor: none !important;">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p class="hover-effect" style="cursor: none !important;">Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
 				</div>
 			  </div>
 			</div>
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');" target="_blank">
+				<a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');cursor: none !important;" target="_blank">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" target="_blank">Customer Segmentation using clustering model</a></h3>
-				  <p class="hover-effect">Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				  <h3 class="heading"><a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" target="_blank" style="cursor: none !important;">Customer Segmentation using clustering model</a></h3>
+				  <p class="hover-effect" style="cursor: none !important;">Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
 				</div>
 			  </div>
 			</div>
 
-<!-- 
-<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/prj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		-->
+
 		 <div class="col-md-7 heading-section text-center ftco-animate">
 			
 			<h1 class="big big-2 vibrate">Achievements</h1>
 			<h2 class="mb-4 hover-effect">Achievements</h2>
 			<p class="hover-effect">Milestones Achieved Along the Journey...!</p>
-		 </br>
+		</br>
 			<div class="gallery-container">
 				<img src="images/Responsive_website1.jpg" alt="Icon 4" class="gallery-icon ">
 				<img src="images/programming_with_python1.jpg" alt="Icon 1" class="gallery-icon ">
@@ -997,7 +1011,7 @@ a{
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question..?  </span> <a href="https://forms.gle/PNJt6BDURtFoscRW9" class="btn button-linkedin ml-2 py-2 px-2 vibrate" target="_blank">Click Here</a> </h2>
+					<h2>Have a<span> Question..?  </span> <a href="https://forms.gle/PNJt6BDURtFoscRW9" class="btn button-linkedin ml py-2 px-2 vibrate" target="_blank">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
@@ -1005,7 +1019,7 @@ a{
 					<li class="ftco-animate normal-txt">Find me on </li>
 					
 					<li class="ftco-animate"><a href="https://www.linkedin.com/in/pavan-sai-680165260/" target="_blank"><span class="icon-linkedin"></span></a></li>  
-					<li class="ftco-animate"><a href="https://x.com/Pavan6981484520"><span class="icon-twitter" target="_blank"></span></a></li>
+					<li class="ftco-animate"><a href="https://wa.me/+918074399963"><span class="icon-whatsapp" target="_blank"></span></a></li>
 					<li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100008256071734" target="_blank"><span class="icon-facebook"></span></a></li>
 					<li class="ftco-animate"><a href="https://www.instagram.com/pavansai580?igsh=dGR1bTBobnI4dTdy" target="_blank"><span class="icon-instagram"></span></a></li>
 					</ul>
