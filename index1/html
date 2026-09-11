@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================================================
+         KEEPING ORIGINAL META / SEO INFORMATION
+         ========================================================= -->
+
+    <title style="font-weight:200!important">
+        P ᵃ ᵥ ᵃ ₙ&nbsp; &nbsp;S ᵃ ᵢ
+    </title>
+
+    <link rel="icon" href="../images/ABOUTME.png" sizes="32x32" />
+    <link rel="icon" href="../images/ABOUTME.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="../images/ABOUTME.png" />
+    <meta name="msapplication-TileImage" content="../images/ABOUTME.png" />
+
+    <meta charset="utf-8"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"
+          maximum-scale="1"
+          user-scalable="no"
+          touch-action="manipulation">
+
+    <meta name="google-site-verification"
+          content="-Vs05b3Ah11iJFarJ6BqWwUhe1l1Y1mL_ZzkeIXoo5c">
+
+    <meta name="description"
+          content="Welcome to Pavan Sai's official website. Discover projects, skills, and services.">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- =========================================================
+         CUSTOM DESIGN
+         ========================================================= -->
+
+    <style>
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            cursor: none !important;
+            background: #000;
+            color: #d7d7d7;
+        }
+
+        body a {
+            cursor: none !important;
+        }
+
+        a {
+            cursor: none !important;
+        }
+
+        button {
+            cursor: none !important;
+        }
+
+        p {
+            line-height: 1.9;
+        }
+
+        p:hover {
+            color: rgb(255, 140, 0) !important;
+        }
+
+        li:hover {
+            color: rgb(157, 0, 255) !important;
+        }
+
+        h1:hover {
+            color: rgb(0, 255, 136);
+        }
+
+        .hover-effect {
+            display: inline-block;
+            transition: transform .3s ease;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-4px);
+        }
+
+
+        /* =====================================================
+           CURSOR
+        ===================================================== */
+
+        body {
+            cursor: url('../images/cursor-divv.png'), auto !important;
+        }
+
+        div {
+            cursor: url('../images/cursor-divv.png'), auto;
+        }
+
+        div ul li a {
+            cursor: none !important;
+        }
+
+
+        /* =====================================================
+           VIDEO BACKGROUND
+        ===================================================== */
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -10;
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            opacity: .14;
+        }
+
+
+        /* =====================================================
+           OVERALL DARK LAYER
+        ===================================================== */
+
+        .site-content-layer {
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(255, 153, 0, .06),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 70%,
+                    rgba(120, 0, 255, .05),
+                    transparent 35%
+                ),
+                rgba(0,0,0,.65);
+
+            pointer-events: none;
+            z-index: -5;
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
+
+        .navbar {
+            background: rgba(0,0,0,.88) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,.08);
+        }
+
+        .navbar-brand {
+            color: #aaa !important;
+            letter-spacing: 2px;
+        }
+
+        .navbar-brand:hover {
+            color: #fff !important;
+        }
+
+        .nav-link {
+            color: #aaa !important;
+            transition: .3s;
+        }
+
+        .nav-link:hover {
+            color: #ff9800 !important;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .hero-main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-kicker {
+            color: #ffbd39;
+            letter-spacing: 5px;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-size: clamp(55px, 10vw, 120px);
+            font-weight: 300;
+            line-height: .95;
+            letter-spacing: -5px;
+        }
+
+        .hero-title span {
+            color: #ffbd39;
+        }
+
+        .hero-description {
+            max-width: 700px;
+            font-size: 19px;
+            color: #aaa;
+        }
+
+        .hero-line {
+            width: 100px;
+            height: 2px;
+            background: #ffbd39;
+            margin: 35px 0;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            border: 1px solid rgba(255,255,255,.2);
+            padding: 8px 14px;
+            margin: 4px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #bbb;
+        }
+
+
+        /* =====================================================
+           BUTTON
+        ===================================================== */
+
+        .button-linkedin {
+            font-size: 12px;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #ffbd39;
+            border-radius: 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            transition: all .3s ease;
+        }
+
+        .button-linkedin:hover {
+            color: #000 !important;
+            background: #ffbd39;
+            border-color: #ffbd39;
+        }
+
+
+        /* =====================================================
+           MAIN RESEARCH LAYOUT
+        ===================================================== */
+
+        .research-layout {
+            display: grid;
+            grid-template-columns: 280px minmax(0, 1fr);
+            max-width: 1500px;
+            margin: auto;
+            padding: 100px 40px;
+            gap: 70px;
+        }
+
+        .research-sidebar {
+            position: sticky;
+            top: 110px;
+            height: fit-content;
+            align-self: start;
+        }
+
+        .research-sidebar-card {
+            border-left: 1px solid rgba(255,255,255,.15);
+            padding-left: 25px;
+        }
+
+        .sidebar-label {
+            font-size: 10px;
+            letter-spacing: 3px;
+            color: #777;
+            text-transform: uppercase;
+        }
+
+        .sidebar-name {
+            font-size: 27px;
+            color: #fff;
+            margin: 10px 0 25px;
+        }
+
+        .sidebar-role {
+            color: #999;
+            font-size: 13px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 8px 0;
+            color: #777;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .sidebar-nav a:hover {
+            color: #ffbd39 !important;
+            padding-left: 8px;
+        }
+
+
+        /* =====================================================
+           PROFILE IMAGE
+        ===================================================== */
+
+        .profile-image-wrap {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-image {
+            width: 210px;
+            max-width: 85%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 4px;
+            filter: grayscale(10%);
+            transition: .5s;
+        }
+
+        .profile-image:hover {
+            filter: grayscale(60%);
+            transform: scale(1.03);
+        }
+
+
+        /* =====================================================
+           CONTENT
+        ===================================================== */
+
+        .research-content {
+            min-width: 0;
+        }
+
+        .research-section {
+            padding: 90px 0;
+            border-bottom: 1px solid rgba(255,255,255,.08);
+        }
+
+        .research-section:first-child {
+            padding-top: 0;
+        }
+
+        .section-index {
+            color: #ffbd39;
+            font-size: 11px;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: clamp(34px, 5vw, 65px);
+            font-weight: 300;
+            margin-bottom: 35px;
+        }
+
+        .section-intro {
+            font-size: 20px;
+            color: #bbb;
+            max-width: 850px;
+            line-height: 1.9;
+        }
+
+        .large-text {
+            font-size: 18px;
+            color: #aaa;
+            line-height: 2;
+        }
+
+
+        /* =====================================================
+           PROFILE DATA
+        ===================================================== */
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .profile-item {
+            border-top: 1px solid rgba(255,255,255,.12);
+            padding-top: 15px;
+        }
+
+        .profile-item small {
+            display: block;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 9px;
+            margin-bottom: 8px;
+        }
+
+        .profile-item strong {
+            color: #ddd;
+            font-weight: 400;
+        }
+
+
+        /* =====================================================
+           THINKING BLOCKS
+        ===================================================== */
+
+        .thinking-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .thinking-card {
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,.09);
+            background: rgba(255,255,255,.015);
+            transition: .4s;
+        }
+
+        .thinking-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255,189,57,.4);
+            background: rgba(255,189,57,.025);
+        }
+
+        .thinking-number {
+            color: #ffbd39;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .thinking-card h3 {
+            color: #eee;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+
+        .thinking-card p {
+            color: #888;
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           VISION
+        ===================================================== */
+
+        .vision-statement {
+            font-size: clamp(27px,4vw,48px);
+            line-height: 1.35;
+            color: #ddd;
+            font-weight: 300;
+            border-left: 2px solid #ffbd39;
+            padding-left: 30px;
+            margin: 45px 0;
+        }
+
+        .vision-statement span {
+            color: #ffbd39;
+        }
+
+
+        /* =====================================================
+           CAPABILITIES
+        ===================================================== */
+
+        .capability-list {
+            margin-top: 40px;
+        }
+
+        .capability {
+            display: flex;
+            align-items: baseline;
+            gap: 25px;
+            border-bottom: 1px solid rgba(255,255,255,.08);
+            padding: 20px 0;
+        }
+
+        .capability-number {
+            color: #555;
+            font-size: 12px;
+            min-width: 30px;
+        }
+
+        .capability h3 {
+            color: #ddd;
+            font-size: 21px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .capability p {
+            margin: 4px 0 0;
+            color: #777;
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           PROJECTS
+        ===================================================== */
+
+        .project {
+            border-top: 1px solid rgba(255,255,255,.12);
+            padding: 45px 0;
+        }
+
+        .project:last-child {
+            border-bottom: 1px solid rgba(255,255,255,.12);
+        }
+
+        .project-meta {
+            color: #ffbd39;
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .project-title {
+            color: #eee;
+            font-size: clamp(27px,4vw,42px);
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .project-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .project-title a:hover {
+            color: #ffbd39 !important;
+        }
+
+        .project-description {
+            max-width: 850px;
+            color: #999;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .project-stack {
+            margin-top: 20px;
+        }
+
+        .stack-item {
+            display: inline-block;
+            color: #777;
+            border: 1px solid rgba(255,255,255,.1);
+            padding: 5px 9px;
+            margin: 3px;
+            font-size: 10px;
+        }
+
+
+        /* =====================================================
+           MRE
+        ===================================================== */
+
+        .experimental-box {
+            margin-top: 45px;
+            padding: 40px;
+            border: 1px solid rgba(255,189,57,.2);
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(255,189,57,.05),
+                    transparent 35%
+                ),
+                rgba(255,255,255,.015);
+        }
+
+        .experimental-label {
+            color: #ffbd39;
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .experimental-box h3 {
+            color: #eee;
+            font-size: 35px;
+            font-weight: 300;
+            margin: 15px 0 25px;
+        }
+
+        .experimental-box p {
+            color: #999;
+        }
+
+        .concept-flow {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin-top: 35px;
+        }
+
+        .concept-step {
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,.08);
+            text-align: center;
+        }
+
+        .concept-step strong {
+            display: block;
+            color: #ddd;
+            margin-bottom: 5px;
+        }
+
+        .concept-step span {
+            color: #666;
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           SERVZIT
+        ===================================================== */
+
+        .servzit-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 45px;
+        }
+
+        .servzit-card {
+            padding: 35px;
+            border: 1px solid rgba(255,255,255,.1);
+        }
+
+        .servzit-card h3 {
+            color: #eee;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .servzit-card p {
+            color: #888;
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           SYSTEM MINDSET
+        ===================================================== */
+
+        .mindset-line {
+            font-size: clamp(28px,4vw,55px);
+            color: #ddd;
+            font-weight: 300;
+            line-height: 1.45;
+            margin-top: 40px;
+        }
+
+        .mindset-line span {
+            color: #ffbd39;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .contact-item {
+            border-top: 1px solid rgba(255,255,255,.1);
+            padding: 20px 0;
+        }
+
+        .contact-item small {
+            display: block;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 9px;
+            margin-bottom: 8px;
+        }
+
+        .contact-item a,
+        .contact-item span {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #ffbd39 !important;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        .simple-footer {
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid rgba(255,255,255,.08);
+        }
+
+        .simple-footer p {
+            color: #555;
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 991px) {
+
+            .research-layout {
+                grid-template-columns: 1fr;
+                padding: 70px 25px;
+                gap: 40px;
+            }
+
+            .research-sidebar {
+                position: relative;
+                top: 0;
+            }
+
+            .research-sidebar-card {
+                border-left: none;
+                border-bottom: 1px solid rgba(255,255,255,.1);
+                padding-left: 0;
+                padding-bottom: 25px;
+            }
+
+            .sidebar-nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .sidebar-nav a {
+                padding: 3px 0;
+            }
+
+            .profile-image {
+                width: 180px;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .hero-title {
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .profile-grid,
+            .thinking-grid,
+            .servzit-layout,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .concept-flow {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .research-section {
+                padding: 65px 0;
+            }
+
+            .experimental-box {
+                padding: 25px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .research-layout {
+                padding: 60px 18px;
+            }
+
+            .concept-flow {
+                grid-template-columns: 1fr;
+            }
+
+            .capability {
+                display: block;
+            }
+
+            .capability-number {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+        }
+
+
+        /* =====================================================
+           SHINE
+        ===================================================== */
+
+        .shining-text1 {
+            font-size: 14px;
+            color: #ddd;
+            background:
+                linear-gradient(
+                    120deg,
+                    #f6f6f6,
+                    #ffffff,
+                    #d19a00
+                );
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            animation: metallic-shine 3s linear infinite;
+        }
+
+        @keyframes metallic-shine {
+
+            0% {
+                background-position: 200% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+
+        }
+
+
+        /* =====================================================
+           FADE
+        ===================================================== */
+
+        @keyframes sectionReveal {
+
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+<body data-spy="scroll"
+      data-target=".site-navbar-target"
+      data-offset="300">
+
+
+    <!-- =========================================================
+         BACKGROUND
+         ========================================================= -->
+
+    <div class="video-background">
+
+        <video autoplay muted loop playsinline>
+
+            <source src="images/.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="site-content-layer"></div>
+
+
+    <!-- =========================================================
+         NAVIGATION
+         ========================================================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark
+                ftco_navbar ftco-navbar-light
+                site-navbar-target"
+         id="ftco-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="https://wa.me/+918074399963">
+
+                <span>
+                    P ₐ ᵥ ₐ ₙ &nbsp;&nbsp; 🅂 ₐ ᵢ
+                </span>
+
+            </a>
+
+
+            <button class="navbar-toggler
+                           js-fh5co-nav-toggle
+                           fh5co-nav-toggle"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#ftco-nav"
+                    aria-controls="ftco-nav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="oi oi-menu"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                 id="ftco-nav">
+
+                <ul class="navbar-nav nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="#home-section"
+                           class="nav-link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about-section"
+                           class="nav-link">
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#thinking-section"
+                           class="nav-link">
+                            <span>Thinking</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#work-section"
+                           class="nav-link">
+                            <span>Work</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#mre-section"
+                           class="nav-link">
+                            <span>MRE</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#vision-section"
+                           class="nav-link">
+                            <span>Vision</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact-section"
+                           class="nav-link">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+
+    <section id="home-section"
+             class="hero">
+
+        <div class="container hero-main">
+
+            <div class="row">
+
+                <div class="col-lg-10">
+
+                    <div class="hero-kicker">
+                        Independent Technology & Systems
+                    </div>
+
+                    <div class="hero-line"></div>
+
+                    <h1 class="hero-title">
+
+                        Pavan
+                        <span>Sai</span>
+
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Software developer, technology explorer and
+                        systems builder working across artificial intelligence,
+                        data, software applications and experimental engineering.
+
+                    </p>
+
+
+                    <div class="mt-4">
+
+                        <span class="hero-tag">
+                            Artificial Intelligence
+                        </span>
+
+                        <span class="hero-tag">
+                            Software Systems
+                        </span>
+
+                        <span class="hero-tag">
+                            Data
+                        </span>
+
+                        <span class="hero-tag">
+                            NLP
+                        </span>
+
+                        <span class="hero-tag">
+                            Experimental Engineering
+                        </span>
+
+                    </div>
+
+
+                    <div class="mt-5">
+
+                        <a href="#about-section"
+                           class="btn button-linkedin py-3 px-5">
+
+                            Explore
+
+                        </a>
+
+                        &nbsp;
+
+                        <a href="https://github.com/pavan-580"
+                           target="_blank"
+                           class="btn button-linkedin py-3 px-5">
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         MAIN RESEARCH LAYOUT
+         ========================================================= -->
+
+    <main class="research-layout">
+
+
+        <!-- =====================================================
+             LEFT STICKY PROFILE / INDEX
+        ===================================================== -->
+
+        <aside class="research-sidebar">
+
+            <div class="research-sidebar-card">
+
+
+                <div class="profile-image-wrap">
+
+                    <img src="images/ps.png"
+                         alt="Pavan Sai"
+                         class="profile-image">
+
+                </div>
+
+
+                <div class="sidebar-label">
+                    Profile
+                </div>
+
+                <div class="sidebar-name">
+                    Pavan Sai
+                </div>
+
+                <div class="sidebar-role">
+
+                    Software Developer<br>
+                    AI & Data Systems<br>
+                    Technology Exploration
+
+                </div>
+
+
+                <div class="sidebar-nav">
+
+                    <a href="#about-section">
+                        01 &nbsp; About
+                    </a>
+
+                    <a href="#thinking-section">
+                        02 &nbsp; Thinking
+                    </a>
+
+                    <a href="#capabilities-section">
+                        03 &nbsp; Capabilities
+                    </a>
+
+                    <a href="#work-section">
+                        04 &nbsp; Selected Work
+                    </a>
+
+                    <a href="#servzit-section">
+                        05 &nbsp; Servzit
+                    </a>
+
+                    <a href="#mre-section">
+                        06 &nbsp; MRE
+                    </a>
+
+                    <a href="#vision-section">
+                        07 &nbsp; Vision
+                    </a>
+
+                    <a href="#contact-section">
+                        08 &nbsp; Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================================
+             RIGHT CONTENT
+        ===================================================== -->
+
+        <div class="research-content">
+
+
+            <!-- =================================================
+                 ABOUT
+            ================================================= -->
+
+            <section id="about-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    01 / ABOUT
+                </div>
+
+                <h2 class="section-title">
+                    Not just using technology.
+                    Understanding it.
+                </h2>
+
+
+                <p class="section-intro">
+
+                    Technology is not something I only want to use.
+                    I want to understand what makes it work.
+
+                </p>
+
+
+                <p class="large-text">
+
+                    My work moves between software development,
+                    artificial intelligence, data systems,
+                    mobile applications and experimental engineering ideas.
+
+                    Some explorations become working software.
+                    Others begin as technical questions that require
+                    deeper investigation.
+
+                </p>
+
+
+                <p class="large-text">
+
+                    I enjoy taking systems apart mentally and technically,
+                    understanding the logic underneath them,
+                    rebuilding them and testing what happens.
+
+                    The common thread is curiosity pushed into construction.
+
+                </p>
+
+
+                <div class="profile-grid">
+
+
+                    <div class="profile-item">
+
+                        <small>Role</small>
+
+                        <strong>
+                            Software Developer
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <small>Location</small>
+
+                        <strong>
+                            Hyderabad, India
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <small>Core Areas</small>
+
+                        <strong>
+                            Software, AI, Data
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <small>Education</small>
+
+                        <strong>
+                            Bachelor of Science
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <small>Primary Technologies</small>
+
+                        <strong>
+                            Python, SQL, JavaScript
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <small>Current Direction</small>
+
+                        <strong>
+                            Intelligent Systems
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 THINKING
+            ================================================= -->
+
+            <section id="thinking-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    02 / THINKING
+                </div>
+
+                <h2 class="section-title">
+                    How I approach a problem
+                </h2>
+
+
+                <p class="section-intro">
+
+                    I am less interested in memorizing a technology
+                    and more interested in understanding the system
+                    behind the technology.
+
+                </p>
+
+
+                <div class="thinking-grid">
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Understand
+                        </h3>
+
+                        <p>
+
+                            Before trying to improve a system,
+                            I want to understand what is actually
+                            happening inside it.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Break Apart
+                        </h3>
+
+                        <p>
+
+                            Large systems become easier to reason about
+                            when their individual components and
+                            dependencies are visible.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Reconstruct
+                        </h3>
+
+                        <p>
+
+                            Building a system from its individual
+                            pieces forces a deeper understanding than
+                            simply consuming an existing solution.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Question Again
+                        </h3>
+
+                        <p>
+
+                            Once something works, the next question
+                            is not "what else can I add?"
+                            It is "why does it work this way?"
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="mindset-line">
+
+                    Understand the system.
+                    <span>Break it apart.</span>
+                    Reconstruct it.
+                    Test it.
+                    Improve it.
+                    Then ask a harder question.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CAPABILITIES
+            ================================================= -->
+
+            <section id="capabilities-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    03 / CAPABILITIES
+                </div>
+
+                <h2 class="section-title">
+                    What I can build
+                </h2>
+
+
+                <p class="section-intro">
+
+                    My interests span several technical layers.
+                    The goal is not to stay inside one category,
+                    but to connect them when the problem demands it.
+
+                </p>
+
+
+                <div class="capability-list">
+
+
+                    <div class="capability">
+
+                        <div class="capability-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                AI Applications
+                            </h3>
+
+                            <p>
+                                Retrieval systems, NLP applications
+                                and AI-powered software workflows.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability">
+
+                        <div class="capability-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Data Systems
+                            </h3>
+
+                            <p>
+                                Data analysis, SQL systems,
+                                dashboards and data-driven decision tools.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability">
+
+                        <div class="capability-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Machine Learning
+                            </h3>
+
+                            <p>
+                                Machine learning experiments,
+                                forecasting, clustering and NLP.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability">
+
+                        <div class="capability-number">
+                            04
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Software Applications
+                            </h3>
+
+                            <p>
+                                Web and application development,
+                                APIs, application architecture and
+                                platform integration.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability">
+
+                        <div class="capability-number">
+                            05
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Mobile Development
+                            </h3>
+
+                            <p>
+                                React Native and Expo based application
+                                development and authentication workflows.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability">
+
+                        <div class="capability-number">
+                            06
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Experimental Engineering
+                            </h3>
+
+                            <p>
+                                Exploring physical systems and asking
+                                whether mechanical processes can be
+                                redesigned from first principles.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SELECTED WORK
+            ================================================= -->
+
+            <section id="work-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    04 / SELECTED WORK
+                </div>
+
+                <h2 class="section-title">
+                    Systems I have built
+                </h2>
+
+
+                <p class="section-intro">
+
+                    My projects represent different stages of the same
+                    process: taking an idea, understanding its components,
+                    implementing it and learning from the result.
+
+                </p>
+
+
+
+                <!-- RAG -->
+
+                <article class="project">
+
+                    <div class="project-meta">
+                        Artificial Intelligence / Retrieval Systems
+                    </div>
+
+                    <h3 class="project-title">
+
+                        <a href="https://github.com/pavan-580/enterprise-multimodal-rag"
+                           target="_blank">
+
+                            Enterprise Multimodal RAG
+
+                        </a>
+
+                    </h3>
+
+
+                    <p class="project-description">
+
+                        I wanted to understand what actually happens
+                        between a question and an answer when an AI system
+                        has to work with its own knowledge base.
+
+                    </p>
+
+
+                    <p class="project-description">
+
+                        The system explores the complete retrieval pipeline:
+                        documents are processed, information is divided into
+                        usable chunks, embeddings represent that information
+                        numerically, vector similarity is used to identify
+                        relevant context and the retrieved information is
+                        then passed into the response-generation process.
+
+                    </p>
+
+
+                    <p class="project-description">
+
+                        The important part of this project for me is not
+                        simply creating a chatbot. It is understanding the
+                        architecture that connects information retrieval
+                        with language-model generation.
+
+                    </p>
+
+
+                    <div class="project-stack">
+
+                        <span class="stack-item">RAG</span>
+                        <span class="stack-item">Embeddings</span>
+                        <span class="stack-item">Vector Search</span>
+                        <span class="stack-item">LLM</span>
+                        <span class="stack-item">Python</span>
+
+                    </div>
+
+
+                    <div class="mt-4">
+
+                        <a href="https://github.com/pavan-580/enterprise-multimodal-rag"
+                           target="_blank"
+                           class="btn button-linkedin py-2 px-4">
+
+                            View Repository
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- LSTM -->
+
+                <article class="project">
+
+                    <div class="project-meta">
+                        Natural Language Processing / Deep Learning
+                    </div>
+
+                    <h3 class="project-title">
+
+                        <a href="https://github.com/pavan-580/lstm-sentiment-analysis"
+                           target="_blank">
+
+                            LSTM Sentiment Analysis
+
+                        </a>
+
+                    </h3>
+
+
+                    <p class="project-description">
+
+                        This project explores sentiment classification
+                        using Long Short-Term Memory networks.
+
+                    </p>
+
+
+                    <p class="project-description">
+
+                        Working with sequential text creates a different
+                        problem from ordinary tabular prediction.
+                        The ordering of words and the information carried
+                        from earlier parts of a sequence can influence
+                        the interpretation of later information.
+
+                    </p>
+
+
+                    <p class="project-description">
+
+                        Building the system helped me understand the role
+                        of sequence modelling in NLP and how neural networks
+                        can be designed to retain useful contextual information.
+
+                    </p>
+
+
+                    <div class="project-stack">
+
+                        <span class="stack-item">Python</span>
+                        <span class="stack-item">NLP</span>
+                        <span class="stack-item">LSTM</span>
+                        <span class="stack-item">Deep Learning</span>
+
+                    </div>
+
+
+                    <div class="mt-4">
+
+                        <a href="https://github.com/pavan-580/lstm-sentiment-analysis"
+                           target="_blank"
+                           class="btn button-linkedin py-2 px-4">
+
+                            Repository
+
+                        </a>
+
+                        <a href="https://lstm-sentiment-analysis-uudjlwqumtvscdaps55emm.streamlit.app/"
+                           target="_blank"
+                           class="btn button-linkedin py-2 px-4">
+
+                            Live Demo
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SQL -->
+
+                <article class="project">
+
+                    <div class="project-meta">
+                        Data / SQL
+                    </div>
+
+                    <h3 class="project-title">
+
+                        <a href="https://github.com/pavan-580/-Digital-Music-Store/blob/main/Music_Store_Query.sql"
+                           target="_blank">
+
+                            Digital Music Store Data Analysis
+
+                        </a>
+
+                    </h3>
+
+
+                    <p class="project-description">
+
+                        A SQL-based exploration of music-store data
+                        using advanced queries to identify patterns,
+                        business gaps and useful information for
+                        understanding business performance.
+
+                    </p>
+
+
+                    <div class="project-stack">
+
+                        <span class="stack-item">SQL</span>
+                        <span class="stack-item">Data Analysis</span>
+                        <span class="stack-item">Business Intelligence</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- POWER BI -->
+
+                <article class="project">
+
+                    <div class="project-meta">
+                        Data Visualization / Business Intelligence
+                    </div>
+
+                    <h3 class="project-title">
+
+                        <a href="https://github.com/pavan-580/power-bi-analysis/blob/main/Madhav%20Store%20dashboard.jpg"
+                           target="_blank">
+
+                            Power BI Sales Dashboard
+
+                        </a>
+
+                    </h3>
+
+
+                    <p class="project-description">
+
+                        A Power BI dashboard designed to track and analyse
+                        online sales information across India.
+
+                    </p>
+
+
+                    <div class="project-stack">
+
+                        <span class="stack-item">Power BI</span>
+                        <span class="stack-item">Data Analysis</span>
+                        <span class="stack-item">Visualization</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ML -->
+
+                <article class="project">
+
+                    <div class="project-meta">
+                        Machine Learning
+                    </div>
+
+                    <h3 class="project-title">
+
+                        <a href="https://github.com/pavan-580/sales-forcasting/tree/main"
+                           target="_blank">
+
+                            Sales Forecasting
+
+                        </a>
+
+                    </h3>
+
+
+                    <p class="project-description">
+
+                        A time-series forecasting project exploring
+                        machine-learning approaches for predicting
+                        retail sales behaviour.
+
+                    </p>
+
+
+                    <div class="project-stack">
+
+                        <span class="stack-item">Python</span>
+                        <span class="stack-item">Machine Learning</span>
+                        <span class="stack-item">Time Series</span>
+
+                    </div>
+
+                </article>
+
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SERVZIT
+            ================================================= -->
+
+            <section id="servzit-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    05 / SOFTWARE PRODUCT
+                </div>
+
+                <h2 class="section-title">
+                    Servzit
+                </h2>
+
+
+                <p class="section-intro">
+
+                    Servzit represents another side of my work:
+                    moving from individual experiments toward building
+                    an actual application.
+
+                </p>
+
+
+                <div class="servzit-layout">
+
+
+                    <div class="servzit-card">
+
+                        <h3>
+                            Building the Application
+                        </h3>
+
+                        <p>
+
+                            Servzit is built using React Native and Expo.
+                            Working on the application means dealing with
+                            the practical architecture of a software product,
+                            rather than only developing isolated code.
+
+                        </p>
+
+                        <p>
+
+                            The project has also involved integrating
+                            authentication and handling the differences
+                            between web and mobile application environments.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="servzit-card">
+
+                        <h3>
+                            What It Taught Me
+                        </h3>
+
+                        <p>
+
+                            One of the important lessons from Servzit is
+                            that application development does not stop
+                            when the interface works.
+
+                        </p>
+
+                        <p>
+
+                            Authentication, redirect flows, platform
+                            configuration and deployment behaviour can
+                            become engineering problems of their own.
+
+                            Solving those problems builds a much deeper
+                            understanding of how applications operate
+                            as complete systems.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="project-stack mt-4">
+
+                    <span class="stack-item">
+                        React Native
+                    </span>
+
+                    <span class="stack-item">
+                        Expo
+                    </span>
+
+                    <span class="stack-item">
+                        Google Authentication
+                    </span>
+
+                    <span class="stack-item">
+                        Mobile Development
+                    </span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 MRE
+            ================================================= -->
+
+            <section id="mre-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    06 / EXPERIMENTAL ENGINEERING
+                </div>
+
+                <h2 class="section-title">
+                    Magnetic Repulsion Engine
+                </h2>
+
+
+                <p class="section-intro">
+
+                    An experimental question about whether controlled
+                    magnetic force can be arranged into a useful
+                    mechanical system.
+
+                </p>
+
+
+                <div class="experimental-box">
+
+                    <div class="experimental-label">
+                        MRE / Concept Exploration
+                    </div>
+
+
+                    <h3>
+                        Rethinking mechanical motion
+                    </h3>
+
+
+                    <p>
+
+                        The Magnetic Repulsion Engine is a conceptual
+                        engineering direction exploring whether
+                        controlled magnetic repulsion can be incorporated
+                        into a rotary mechanical mechanism.
+
+                    </p>
+
+
+                    <p>
+
+                        The basic concept considers permanent magnets,
+                        electromagnets, mechanical motion and controlled
+                        electrical pulses working together.
+
+                        A radial arrangement can be considered in which
+                        magnetic forces act at specific points in the
+                        mechanical cycle, producing movement that can
+                        potentially be converted into rotation.
+
+                    </p>
+
+
+                    <p>
+
+                        The larger question is not simply whether magnets
+                        can move something.
+
+                        They obviously can.
+
+                        The question is whether the timing, geometry,
+                        magnetic field interaction, mechanical conversion
+                        and energy-storage system can be engineered into
+                        a useful and efficient mechanism.
+
+                    </p>
+
+
+                    <p>
+
+                        Possible areas of exploration include controlled
+                        electromagnetic pulses, mechanical conversion,
+                        energy recovery, capacitive storage and reduction
+                        of avoidable losses.
+
+                    </p>
+
+
+                    <p>
+
+                        MRE is currently a conceptual and experimental
+                        direction, not a scientifically validated
+                        energy-producing engine.
+
+                        The engineering challenge is therefore to determine
+                        what can actually be demonstrated, where energy is
+                        lost and whether the proposed mechanism offers a
+                        meaningful advantage over established systems.
+
+                    </p>
+
+
+                    <div class="concept-flow">
+
+
+                        <div class="concept-step">
+
+                            <strong>
+                                Magnetic Force
+                            </strong>
+
+                            <span>
+                                Controlled interaction
+                            </span>
+
+                        </div>
+
+
+                        <div class="concept-step">
+
+                            <strong>
+                                Mechanical Motion
+                            </strong>
+
+                            <span>
+                                Force conversion
+                            </span>
+
+                        </div>
+
+
+                        <div class="concept-step">
+
+                            <strong>
+                                Rotation
+                            </strong>
+
+                            <span>
+                                Mechanical output
+                            </span>
+
+                        </div>
+
+
+                        <div class="concept-step">
+
+                            <strong>
+                                Energy Recovery
+                            </strong>
+
+                            <span>
+                                Experimental investigation
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 VISION
+            ================================================= -->
+
+            <section id="vision-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    07 / VISION
+                </div>
+
+                <h2 class="section-title">
+                    Where I am going
+                </h2>
+
+
+                <div class="vision-statement">
+
+                    I want to build systems that sit at the
+                    intersection of
+                    <span>software, intelligence, data and engineering.</span>
+
+                </div>
+
+
+                <p class="large-text">
+
+                    The direction I am building toward is not limited
+                    to becoming better at one programming language
+                    or one framework.
+
+                </p>
+
+
+                <p class="large-text">
+
+                    I want to become capable of taking a difficult
+                    technical problem, understanding the underlying
+                    system, selecting the right technologies,
+                    building a working implementation and investigating
+                    the parts that are still not understood.
+
+                </p>
+
+
+                <p class="large-text">
+
+                    Artificial intelligence gives software the ability
+                    to work with information in new ways.
+
+                    Data systems provide the evidence required to
+                    understand what is happening.
+
+                    Software engineering turns ideas into usable systems.
+
+                    Experimental engineering asks whether physical
+                    systems themselves can be redesigned.
+
+                </p>
+
+
+                <p class="large-text">
+
+                    I want to work across those boundaries.
+
+                </p>
+
+
+                <div class="thinking-grid">
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            SOFTWARE
+                        </div>
+
+                        <h3>
+                            Build useful systems
+                        </h3>
+
+                        <p>
+
+                            Applications that solve real problems
+                            and operate as complete systems.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            AI
+                        </div>
+
+                        <h3>
+                            Make information intelligent
+                        </h3>
+
+                        <p>
+
+                            Systems that retrieve, interpret,
+                            classify and work with information.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            DATA
+                        </div>
+
+                        <h3>
+                            Find what the data says
+                        </h3>
+
+                        <p>
+
+                            Turning raw information into
+                            understandable patterns and decisions.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="thinking-card">
+
+                        <div class="thinking-number">
+                            ENGINEERING
+                        </div>
+
+                        <h3>
+                            Question the physical system
+                        </h3>
+
+                        <p>
+
+                            Exploring mechanisms rather than
+                            accepting every existing design as final.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="mindset-line">
+
+                    Different technologies.
+                    <span>Same mindset.</span>
+
+                    Understand what is underneath.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 EXPERIENCE
+            ================================================= -->
+
+            <section id="experience-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    08 / EXPERIENCE
+                </div>
+
+                <h2 class="section-title">
+                    Professional experience
+                </h2>
+
+
+                <article class="project">
+
+                    <div class="project-meta">
+                        2023 - Present
+                    </div>
+
+                    <h3 class="project-title">
+                        Data Analyst / Team Lead
+                    </h3>
+
+                    <p class="project-description">
+
+                        At Source it, I work with operational data,
+                        telecaller performance and reporting workflows
+                        supporting Amazon-related operations.
+
+                    </p>
+
+                    <p class="project-description">
+
+                        The role involves monitoring data updates,
+                        coordinating operational activities,
+                        tracking performance and addressing workflow
+                        issues in real time.
+
+                    </p>
+
+                </article>
+
+
+                <article class="project">
+
+                    <div class="project-meta">
+                        2020 - 2023
+                    </div>
+
+                    <h3 class="project-title">
+                        SAP & Material Dispatch Operations
+                    </h3>
+
+                    <p class="project-description">
+
+                        At Dr. Reddy's Laboratories, I worked with
+                        SAP-based material dispatch operations,
+                        inventory updates and coordination across
+                        operational teams.
+
+                    </p>
+
+                    <p class="project-description">
+
+                        The experience gave me practical exposure to
+                        structured enterprise workflows, real-time
+                        operational data and process efficiency.
+
+                    </p>
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 EDUCATION
+            ================================================= -->
+
+            <section id="education-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    09 / EDUCATION
+                </div>
+
+                <h2 class="section-title">
+                    Foundation
+                </h2>
+
+
+                <div class="profile-grid">
+
+
+                    <div class="profile-item">
+
+                        <small>
+                            2017 - 2020
+                        </small>
+
+                        <strong>
+                            Bachelor of Science
+                            <br>
+                            GITAM University
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <small>
+                            2014 - 2016
+                        </small>
+
+                        <strong>
+                            Higher Secondary School
+                            <br>
+                            Sri Chaithanya IIT Academy
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="mt-5">
+
+                    <a href="../images/pavansai-cv.docx"
+                       target="_blank"
+                       class="btn button-linkedin py-3 px-5">
+
+                        View CV
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CONTACT
+            ================================================= -->
+
+            <section id="contact-section"
+                     class="research-section">
+
+                <div class="section-index">
+                    10 / CONTACT
+                </div>
+
+                <h2 class="section-title">
+                    Let's build something meaningful.
+                </h2>
+
+
+                <p class="section-intro">
+
+                    If the problem is interesting,
+                    difficult or still not fully understood,
+                    that is usually where the conversation becomes useful.
+
+                </p>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-item">
+
+                        <small>
+                            Location
+                        </small>
+
+                        <span>
+                            Hyderabad, India
+                        </span>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <small>
+                            Email
+                        </small>
+
+                        <a href="mailto:pavansai580@gmail.com">
+
+                            pavansai580@gmail.com
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <small>
+                            Phone
+                        </small>
+
+                        <a href="tel:+918074399963">
+
+                            +91 8074399963
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <small>
+                            GitHub
+                        </small>
+
+                        <a href="https://github.com/pavan-580"
+                           target="_blank">
+
+                            github.com/pavan-580
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="mt-5">
+
+                    <a href="https://forms.gle/PNJt6BDURtFoscRW9"
+                       target="_blank"
+                       class="btn button-linkedin py-3 px-5">
+
+                        Have a Question?
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         SIMPLE FOOTER
+         NO SOCIAL ICON CLUSTER
+         ========================================================= -->
+
+    <footer class="simple-footer">
+
+        <p>
+
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+
+            Pavan Sai.
+
+            Technology, systems and continuous exploration.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         LOADER
+         ========================================================= -->
+
+    <div id="ftco-loader"
+         class="show fullscreen">
+
+        <svg class="circular"
+             width="48px"
+             height="48px">
+
+            <circle class="path-bg"
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="none"
+                    stroke-width="4"
+                    stroke="#eeeeee"/>
+
+            <circle class="path"
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="none"
+                    stroke-width="4"
+                    style="color:red;"
+                    stroke-miterlimit="10"
+                    stroke="#F96D00"/>
+
+        </svg>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         ORIGINAL JAVASCRIPT LIBRARIES
+         ========================================================= -->
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/aos.js"></script>
+
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+    <script src="js/scrollax.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+    <!-- =========================================================
+         SMALL INTERACTION SCRIPT
+         ========================================================= -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                const links =
+                    document.querySelectorAll(
+                        '.sidebar-nav a'
+                    );
+
+                links.forEach(function (link) {
+
+                    link.addEventListener(
+                        'click',
+                        function () {
+
+                            links.forEach(function (item) {
+
+                                item.style.color = '#777';
+
+                            });
+
+                            this.style.color = '#ffbd39';
+
+                        }
+                    );
+
+                });
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
