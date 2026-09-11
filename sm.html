@@ -1,22 +1,1084 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Title</title>
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
+    <title style="font-weight:200!important">P ᵃ ᵥ ᵃ ₙ&nbsp; &nbsp;S ᵃ ᵢ</title>
+<link rel="icon" href="../images/ABOUTME.png" sizes="32x32" />
+<link rel="icon" href="../images/ABOUTME.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../images/ABOUTME.png"  />
+<meta name="msapplication-TileImage" content="../images/ABOUTME.png" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" , maximum-scale=1, user-scalable=no, touch-action="manipulation"> 
+<meta name="google-site-verification" content="-Vs05b3Ah11iJFarJ6BqWwUhe1l1Y1mL_ZzkeIXoo5c">
+<meta name="description" content="Welcome to Pavan Sai's official website. Discover projects, skills, and services.">
+                                               
+    <link rel="manifest" href="manifest.json">
 
-    <!-- Add the Animate.css stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+body a{
+     cursor:none!important ;
+}
+.lll:hover {
+    color: red !important ;
+}
+
+.ddd:hover {
+    color: orange !important ;
+}
+
+p:hover{
+	color: rgb(255, 140, 0)!important;
+}
+li:hover{
+	color: rgb(157, 0, 255) !important;
+}
+
+h1:hover{
+		color: rgb(0, 255, 136);
+}
+	.video-background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: -1; /* Ensure the video stays behind other content */
+	}
+	
+	.video-background video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		transform: translate(-50%, -50%);
+		object-fit: cover; /* Ensures the video covers the whole screen */
+	}
+	
+
+	.button-linkedin {
+		font-size: 12px;
+		color: #ffffff; /* LinkedIn blue color */
+		background-color: transparent;
+		border: 5px solid transparent;
+		border-image: linear-gradient(690deg, #b58200 25%, transparent 25%, transparent 75%, #b57000 75%) 15;
+		border-radius: 15px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		transition: all 0.3s ease;
+		
+	}
+	
+	.button-linkedin:hover {
+		background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+		transition: all .9s ease;
+		border-image: linear-gradient(700deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%) 100;
+	}
+	
+	.hover-effect {
+		display: inline-block;
+		transition: transform 0.3s ease;
+	  }
+	
+	  .hover-effect:hover {
+		transform: translateY(-4px); /* Moves the word up by 5px */
+	  }
+	.shining-text1 {
+		font-size: 20px;
+		color: #ddd;
+		background: linear-gradient(120deg, #f6f6f6, #ffffff,#d19a00);
+		background-size: 200% auto;
+		background-clip: text;
+		-webkit-background-clip: text;
+		text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
+		animation: metallic-shine 3s linear infinite;
+	}
+	
+	@keyframes metallic-shine {
+		0% { background-position: 200% 50%; }
+		100% { background-position: 0% 50%; }
+	}
+	  
   
+	  @keyframes shine {
+		0% {
+		  background-position: 200% center;
+		}
+		100% {
+		  background-position: -200% center;
+		}
+	  }
+/*======================================
+//--//-->   ABOUT
+======================================*/
+.grayscale-img {
+    filter: grayscale(5%) !important; /* Apply grayscale */
+    transition: filter .8s ease-in-out; /* Smooth transition */
+}
+
+/* Optional: Restore color on hover */
+.grayscale-img:hover {
+    filter: grayscale(70%) !important; /* Restore color on hover */
+}
+
+.about-mf .box-shadow-full {
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+margin-bottom: 2rem;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text .one-third {
+          width: 100%;
+          position: relative;
+          margin-top: 150px;
+          z-index: -1; }
+@media (max-width: 768px) {
+    .one-third {
+        background-position: center 9% !important; /* Move the image up */
+        background-size: 100% !important; /* Adjust size for mobile */
+
+    }
+}
+@media only screen and (max-width: 768px) {
+    .owl-carousel.home-slider .slider-item .slider-text .one-third {
+        width: 100%; /* Take full width on mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .owl-carousel.home-slider .slider-item .slider-text .one-third video {
+        width: 100%; /* Ensure video takes full width on mobile */
+        height: auto;
+    }
+}
+.about-mf .about-img img {
+margin-left: 10px;
+}
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+margin: .5rem 0 1.2rem 0;
+border-radius: 0;
+height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+height: .7rem;
+background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+position: relative;
+font-size: 30px;
+font-weight: bold;
+color: rgb(255, 132, 0);
+overflow: hidden;
+white-space: nowrap;
+animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+content: "";
+  /* position: absolute; */
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background-color: #ccc;
+animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+from {
+    width: 0;
+}
+to {
+    width: 100%;
+}
+}
+
+@keyframes typing-cursor {
+from {
+    width: 5px;
+}
+to {
+    width: 0;
+}
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+overflow: hidden;
+transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+transform: scale(1.1);
+}
+div{
+  cursor:url('../images/cursor-divv.png') ,auto;
+.navbar-brand{
+	cursor:none auto;
+}
+}
+div ul li a{
+  cursor: none !important ;
+}
+
+
+body{
+	cursor:url('../images/cursor-divv.png') ,auto !important;
+	cursor: none;
+/* 	max-width:90%; */
+
+
+}
+
+button{
+    cursor:none ,auto;
   
+}
+
+button a{
+    cursor:none ,auto;
+  
+}
+  
+a{
+    cursor:none ,auto;
+  
+}
+
+.whatsapp-icon {
+        position: fixed;
+        bottom: 35px;
+        right: 35px;
+        z-index: 1000;
+        background-color:transparent;
+        border-radius: 80%;
+        cursor: none !important;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        visibility: hidden;  /* Initially hidden */
+        opacity: 0;         /* Initially transparent */
+        transition: visibility 0.3s, opacity 0.3s ease;
+    }
+    .whatsapp-icon img {
+        width: 50px; /* Adjust size as needed */
+        transition: transform 0.3s ease;
+    }
+    .whatsapp-icon:hover {
+        transform: scale(1.0); /* Zoom in on hover */
+    }
+    .whatsapp-icon:hover img {
+        transform: scale(.9); /* Slight zoom in on the icon itself */
+    }
+    .visible {
+        visibility: visible;
+        opacity: 1; /* Fully opaque when visible */
+    }
+
+
+
+
+/* WhatsApp Icon Visibility */
+.whatsapp-icon {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility */
+}
+
+.whatsapp-icon.visible {
+    opacity: 1; /* Make visible when class is added */
+}
+
+
+/* WhatsApp Icon Visibility */
+.whatsapp-icon {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility */
+}
+
+.whatsapp-icon.visible {
+    opacity: 1; /* Make visible when class is added */
+}
+
+@keyframes vibrat {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    60% { transform: translate(1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0); }
+}
+
+.vibrat {
+    display: inline-block; /* Ensure the span can be animated */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition */
+}
+
+.vibrat:hover {
+    color: red; /* Change color to red on hover */
+    animation: vibrate 0.2s linear infinite; /* Start vibrating on hover */
+}
+
+
+
+@keyframes show {
+    to {
+        opacity: 1; /* Fade in */
+        transform: translateX(0); /* Move to original position */
+    }
+}
+@media only screen and (max-width: 768px) {
+
+
+    .owl-carousel.home-slider .slider-item .slider-text .one-third video {
+    display:none;    
+    }
+}
+/* Styling the image gallery container */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2px;
+    flex-wrap:wrap;
+}
+
+/* Styling each icon */
+.gallery-icon {
+    width: 110px; /* Small size */
+    height: 80px;
+    margin:5px;
+    margin-bottom: 10px; 
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.gallery-icon:hover {
+    transform: scale(8.5); /* Enlarge the image */
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    width: 105x; /* Initial width */
+    height: 65px;
+    left:40px;
+    cursor:none !important;
+	transition: transform 0.3s ease
+}@media only screen and (max-width: 768px) {
+#myw:hover{
+		color:orange !important;  
+		
+	}
+
+/* Container for the small icons */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the icons */
+}
+
+/* Small icon styling */
+.gallery-icon {
+    width: 90px;
+    height: 55px;
+    object-fit: cover; /* Ensures the image fits within the container */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px; /* Add space between icons */
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay for the hovered image */
+.gallery-icon:hover::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 998; /* Behind the enlarged image */
+}
+
+/* Hover effect: Enlarge the image and center it */
+.gallery-icon:hover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 999; /* Make sure the image appears on top */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+    transition: all 0.3s ease;
+}
+
+
+    
+    /* Optional: Align items in center */
+    
+    }
+    </style>
+
+    <script>
+// 	  document.querySelectorAll('.vibrate').forEach(function(el) {
+//     el.addEventListener('mouseover', function() {
+//         el.classList.add('stopped'); // Add 'stopped' class to stop vibration
+//     });
+// });
+
+    // When the window scrolls
+    window.onscroll = function() {
+        var whatsappIcon = document.querySelector('.whatsapp-icon');
+        // Check if the scroll position is more than 568 pixels
+        if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+            // Make the WhatsApp icon visible
+            whatsappIcon.classList.add('visible');
+        } else {
+            // Hide the WhatsApp icon if above the threshold
+            whatsappIcon.classList.remove('visible');
+        }
+    };
+
+</script>
+
+
+
+
 </head>
 
-<body>
-    <div class="animate__fadeInRight"  style="animation-duration: 2s;">This element will fade in from the right!</div>
-    <div class="animate__fadeInRight" style="animation-duration: 5s;">Your content</div>
-    <div class="animate__animated animate__fadeInRight animate__slow">Your content</div>
+		       <a  href="https://wa.me/+918074399963" target="_blank" class="whatsapp-icon vibrate">
+   				 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+			</a>
+ 
 
 
-  </body>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	<div class="container" style=" cursor:none">
+	
+	    <a class="navbar-brand" href="https://wa.me/+918074399963"><span onmouseover="this.style.color='lightgrey'" onmouseout="this.style.color='grey'" style="color:grey !important ; cursor:none">P ₐ ᵥ ₐ ₙ &nbsp;&nbsp; 🅂 ₐ ᵢ</span></a>
+	    <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="oi oi-menu"></span>
+	    </button>
+
+		<div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav nav ml-auto">
+				<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+				<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+				<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+				<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+				<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+ 	<div class="video-background">
+		<video autoplay muted loop playsinline>
+			<source src="images/.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div> 
+
+		<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+		<div class="slider-item ">
+	    <div class="overlay"></div>
+	        <div class="container">
+			
+	        	<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img ml-2  !important" style="background-size: 100% !important;">
+						<!-- Your content here -->
+						<video id="background-video" autoplay muted loop style="width: 40%; height: auto; object-fit: cover; position: absolute; right: 0; top: 0;">
+							<source src="images/163491-827845629.mp4" type="video/mp4">
+<!-- 							Your browser does not support the video tag -->
+						</video>
+					</div>
+					<div class="one-third js-fullheight order-md-last img">
+	          	<div class="overlay"></div>                                                                                                
+	          	</div>
+		        <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		      	<div class="text">
+		      	<span class="subheading">Hello!</span>
+		            <h1 class="mb-4 mt-3">I'm <span class="hover-effect" style="animation-duration: 2s;font-weight:500px">&nbsp;&nbsp; Pavan Sai</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Developer  ',
+						'UI Designer  ',
+						'Programmer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2 class="hover-effect">A Software Developer </h2>
+	<h2 onmouseover="this.style.color='white'" onmouseout="this.style.color='transparent'" style="color:transparent !important ;">And an 
+					    <span 
+					        class="vibrate"
+					        onmouseover="this.style.color='red'" 
+					        onmouseout="this.style.color='transparent'" 
+					        style="color:transparent !important ;">
+					        Ethical Hacker.</span>
+					    </span>
+	
+					</h2> 
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+						<a href="https://github.com/pavan-580" class="btn button-linkedin  mt-3" onmouseover="this.style.color='orange'" id="myw" onmouseout="this.style.color='white'" style="color:rgb(255, 255, 255) !important; min-width:180px"  target="_blank">My works</a></p>
+		            </div>
+		        </div>
+	        	</div>
+	        </div>
+	    </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									<div class="about-img">
+										<img src="../images/Pavan.png"  class="img-fluid rounded b-shadow-a mb-5 grayscale-img" alt="">
+										
+									</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									<div class="about-info">
+										<p><span class="title-s hover-effect">Name  </span> : <span class="hover-effect">Pavan Sai</span></p>
+										<p><span class="title-s hover-effect">Job Role  </span> :  <span class="hover-effect">Software Developer</span></p>
+										<p><span class="title-s hover-effect">Experience  </span> :  <span class="hover-effect">1 year 3 months</span></p>
+										<!--<p><span class="title-s hover-effect">Freelancing  </span> :  <span class="hover-effect">Not Yet</span></p>-->
+										<p><span class="title-s hover-effect">Address</span > :  <span class="hover-effect">Hyderabad, India</span></p>
+										
+										
+									</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right vibrate" style="color: #fe0000;" >95%</span>
+									<div class="progress">
+										<div class="progress-bar  hover-effect" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right vibrate" style="color: #fe0000;" >85%</span>
+									<div class="progress">
+										<div class="progress-bar  hover-effect" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PBI services </span> <span class="pull-right vibrate" style="color: #fe0000;" >90%</span>
+									<div class="progress">
+										<div class="progress-bar  hover-effect" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>    
+										Java Script  </span> <span class="pull-right vibrate" style="color: #fe0000;" > 70% </span>
+									<div class="progress">
+										<div class="progress-bar hover-effect" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Science</span> <span class="pull-right vibrate" style="color: #fe0000;">75%</span>
+									<div class="progress">
+										<div class="progress-bar  hover-effect" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big-2 big vibrate">About Me</h1>
+								<h2 class="big hover-effect" >About Me</h2>
+								
+								<p class="hover-effect" >I am a GITAM University graduate with a deep passion for coding. Debugging and solving logic problems are tasks I genuinely enjoy, often losing track of time while working on them. I have a solid foundation in Python, JavaScript, MongoDB, SQL, and Power BI, and I am eager to apply my knowledge to real-world challenges. My goal is to continuously grow as a developer and create innovative solutions that make an impact.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex hover-effect"><span>Profile    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</span> <span >Python developer &amp;  Data Analytics.</span></li>
+									<li class="d-flex hover-effect"><span>Domain&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</span> <span>Software Development and Web Solutions,<span onmouseover="this.style.color='red'" class="vibrate" onmouseout="this.style.color='black'" style="color:black !important ;font-size:15px;font-weight:700;">&nbsp;Ethical Hacker</span>.</span></li>
+									<li class="d-flex hover-effect"><span>Education &nbsp;  &nbsp; :</span> <span>Bachelor of Science.</span></li>
+									<li class="d-flex hover-effect"><span>Language &nbsp; &nbsp; :</span> <span>English, Hindi.</span></li>
+									<li class="d-flex hover-effect"><span>BI Tools &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</span> <span>Microsoft Power BI.</span></li>
+									<li class="d-flex hover-effect"><span>Other Skills &nbsp; :</span> <span>Express , React, Node  &amp;  Data Science.</span></li>
+									<li class="d-flex hover-effect"><span>Interest &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  :</span> <span>Traveling, Travel Photography, Teaching.</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number vibrate" data-number="12">0</span> <span>+</span>
+									<span class="shining-text1" style="font-weight: 600;">&nbsp; Projects completed.</span>
+								</p>
+							</br>
+								<p><a href="https://www.linkedin.com/in/pavan-sai-2years-7months/" class="btn button-linkedin py-3 px-5 vibrate" target="_blank">LinkedIn</a>
+								
+</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+            <div class="container">
+                <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2 vibrate">Resume</h1>
+            <h2 class="mb-4 hover-effect">Resume</h2>
+            <p class="hover-effect">A dedicated " <span onmouseover="this.style.color='red'" class="vibrate" onmouseout="this.style.color=''" >GITAM</span> " University graduate with a strong passion for coding, enhanced by learning through Nextwave. 
+				Proficient in Python, JavaScript, MongoDB, SQL, and Power BI, I excel at solving complex coding challenges and 
+				debugging, treating it like an engaging game. With a continuous learning mindset, I’m eager to apply my 
+				skills to real-world projects and grow as a 
+				developer in a dynamic environment.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4" >Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date shining-text1">2023-Present</span>
+					</br>
+						<h2 class="hover-effect">Data Analyst</h2>
+					</br>
+						<span class="position" onmouseover="this.style.color='red'" onmouseout="this.style.color=''">Source it</span>
+						<p class="mt-4 hover-effect">Source it, is a service provider specializing in outsourced solutions. As a Team Lead managing telecaller operations for Amazon, 
+							I oversaw the hourly data updates based on telecaller inputs, ensuring accurate system updates and seamless communication. My role involved monitoring team
+							performance, providing feedback to ensure efficiency, and resolving workflow issues in real-time. 
+							I worked closely with the Amazon client to meet performance targets and deliver accurate, timely reporting to maintain smooth operations.
+							<ul>
+								<li>Coordinated with the Amazon client to meet key performance indicators (KPI's) and ensure the highest standards of service delivery.</li>
+								<li>Resolved workflow and operational issues in real-time, ensuring smooth and uninterrupted processes.</li>
+								<li>Implemented process improvements that enhanced overall team efficiency and data accuracy.</li>
+								<li>Maintained detailed records of telecaller performance and data updates, ensuring compliance with Amazon’s service-level agreements (SLA's).</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date shining-text1">2020-2023</span>
+					</br>
+						<h2 class="hover-effect">Team Member</h2>
+					</br>
+						<span class="position" onmouseover="this.style.color='red'" onmouseout="this.style.color=''">Dr.Reddy's lab</span>
+						<p class="mt-4 hover-effect" >Dr. Reddy's Laboratories is a globally recognized pharmaceutical company, dedicated to the development, 
+							production, and distribution of a diverse range of medications that address various therapeutic areas. As an SAP & Material Dispatch 
+							Specialist, I play a crucial role in the company's supply chain operations by managing the end-to-end material dispatch process through SAP systems. 
+							This includes overseeing real-time updates of inventory data, coordinating with cross-functional teams to ensure accurate stock levels, 
+							and facilitating the timely dispatch of pharmaceutical products to meet customer demands.
+							<ul>
+								<li>Managed SAP-based material dispatch operations, ensuring accurate inventory updates and timely distribution of pharmaceutical products.</li>
+								<li>Collaborated with logistics and warehouse teams to streamline the dispatch process, optimizing product flow from manufacturing to distribution centers.</li>
+								<li>Monitored real-time material movements in SAP, identifying and addressing bottlenecks to improve operational efficiency and delivery timelines.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date shining-text1">2017-2020</span>
+					</br>
+    					<h2 class="hover-effect">Bachelor of Science</h2>
+    					<span class="position" onmouseover="this.style.color='red'" onmouseout="this.style.color=''";></br>
+						Gitam University</span><p class="mt-4">Grade: <span  onmouseover="this.style.color='#30fc03'" onmouseout="this.style.color='#30fc03'">First class</span>.</p>
+    					
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date shining-text1">2014-2016</span>
+						</br>
+    					<h2 class="hover-effect">Higher Secondary School</h2>
+    					<span class="position" onmouseover="this.style.color='red'" onmouseout="this.style.color=''" ;></br>
+						Sri Chaithanya IIT Academy</span><p class="mt-4">Grade: <span  onmouseover="this.style.color='#30fc03'" onmouseout="this.style.color='#30fc03'">First class</span>.</p>
+    					
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="../images/pavansai-cv.docx" class="btn button-linkedin py-3 px-5 vibrate" target="_blank">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container" >
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2 vibrate ">Projects</h1>
+            <h2 class="mb-4 hover-effect">Projects</h2>
+            <p class="hover-effect">Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex" style="cursor: none !important;">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/pavan-580/-Digital-Music-Store/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect " style="background-image: url('images/proj_1.jpg');cursor: none !important;" target="_blank">
+              </a>     
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/pavan-580/-Digital-Music-Store/blob/main/Music_Store_Query.sql" target="_blank" style="cursor: none !important;">Digital Music Store Data Analysis using SQL</a></h3>
+                <p class="hover-effect" style="cursor: none !important;">Analyzed music store data using advanced SQL queries to identify gaps and increase the business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/pavan-580/Diwali-Sale/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');cursor: none !important;" target="_blank">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/pavan-580/Diwali-Sale/blob/main/Diwali_Sales_Analysis.ipynb" target="_blank" style="cursor: none !important;">Data Analysis using Python</a></h3>
+                <p class="hover-effect" style="cursor: none !important;">Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/pavan-580/power-bi-analysis/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');cursor: none !important;" target="_blank">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/pavan-580/power-bi-analysis/blob/main/Madhav%20Store%20dashboard.jpg" target="_blank" style="cursor: none !important;">Power BI Sales dashboard</a></h3>
+                <p class="hover-effect" style="cursor: none !important;">Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/pavan-580/sales-forcasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');cursor: none !important;" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/pavan-580/sales-forcasting/tree/main" target="_blank" style="cursor: none !important;">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p class="hover-effect" style="cursor: none !important;">Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');cursor: none !important;" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/pavan-580/customer_segmentation-/blob/main/Customer_Segmentation-final.ipynb" target="_blank" style="cursor: none !important;">Customer Segmentation using clustering model</a></h3>
+				  <p class="hover-effect" style="cursor: none !important;">Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+
+
+		 <div class="col-md-7 heading-section text-center ftco-animate">
+			
+			<h1 class="big big-2 vibrate" style="font-size: 32px;">Achievements</h1>
+			<h2 class="mb-4 hover-effect">Achievements</h2>
+			<p class="hover-effect">Milestones Achieved Along the Journey...!</p>
+		</br>
+			<div class="gallery-container">
+				<img src="images/Responsive_website1.jpg" alt="Icon 4" class="gallery-icon ">
+				<img src="images/programming_with_python1.jpg" alt="Icon 1" class="gallery-icon ">
+				<img src="images/Data_bases1.jpg" alt="Icon 3" class="gallery-icon">
+				<img src="images/Developer_foundation1.jpg" alt="Icon 2" class="gallery-icon">
+				<img src="images/accenture.jpg" alt="Icon 5" class="gallery-icon">
+				
+			</div>
+	
+		</br>
+	
+		  </div>
+		 </div>
+		</br>	
+	      </br>
+	      
+	  </div>
+	  </br>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number vibrate" data-number="14">0</strong>
+                <span class="hover-effect">Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number vibrate" data-number="23">0</strong>
+                <span class="hover-effect">Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number vibrate" data-number="6">0</strong>
+                <span class="hover-effect">Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number vibrate" data-number="8">0</strong>
+                <span class="hover-effect">Worked with Professionals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2 class="hover-effect">More projects on <span onmouseover="this.style.color='red'" onmouseout="this.style.color='orange'" ;> Github  </span> </h2>
+						<div> <h4 class="heading hover-effect"> I love to solve business problems &amp; uncover hidden data stories. </h4>
+						</br>
+						<p><a href="https://github.com/pavan-580" class="btn button-linkedin py-3 px-5 vibrate" target="_blank">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2 vibrate">Contact Me</h1>
+            <h2 class="mb-4 hover-effect">Contact Me</h2>
+	  </br>
+            <p class="hover-effect">Below are the details to reach out to me..!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs vibrate"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Hyderabad, India.</p>
+	          </div>
+          </div>
+		  <a href="tel://+918074399963">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" >
+          	<div class="align-self-stretch box p-4 text-center"  >
+          		<div class="icon d-flex align-items-center justify-content-center" >
+          			<span class="icon-phone2 vibrate"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+918074399963">+ 91 8074399963</p>
+	          </div>
+          </div></a>
+
+		  <a href="mailto:pavansai580@gmail.com"target="_blank" >
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane vibrate" href="mailto:pavansai580@gmail.com"target="_blank"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:pavansai580@gmail.com"target="_blank" >pavansai580@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          		<span class="icon-globe vibrate" href="../images/pavansai-resume." target="_blank"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="../images/pavansai-cv.docx" target="_blank">resume link</a></p>
+	        </div>
+        </div>
+
+		<div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question..? &nbsp; </span> <a href="https://forms.gle/PNJt6BDURtFoscRW9" class="btn button-linkedin ml py-2 px-2 vibrate" target="_blank">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					<li class="ftco-animate normal-txt">Find me on </li>
+					
+					<li class="ftco-animate"><a href="https://www.linkedin.com/in/pavan-sai-680165260/" target="_blank"><span class="icon-linkedin"></span></a></li>  
+					<li class="ftco-animate"><a href="https://wa.me/+918074399963"><span class="icon-whatsapp" target="_blank"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100008256071734" target="_blank"><span class="icon-facebook"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.instagram.com/pavansai580?igsh=dGR1bTBobnI4dTdy" target="_blank"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		</div>
+</div>
+</section>
+
+
+
+	
+    <footer class="ftco-footer ftco-section" style="bottom:2px;">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center hover-effect">
+
+			<p ><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://pavan-580.github.io" class="lll" style="font-weight:700" target="_blank"> &nbsp;𝒫𝒶𝓋𝒶𝓃 &nbsp; 𝒮𝒶𝒾</a> .
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"  style="color: red;" stroke-miterlimit="10" stroke="#F96D00"/>hfhfh</svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+
+<script src="js/main.js"></script>
+    
+</body>
 </html>
